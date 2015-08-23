@@ -1,0 +1,560 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+38 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$$anonfun$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$delayedInit$body.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/PingMessage$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/PingMessage.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2$$anonfun$2.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2$$anonfun$3.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1$$anonfun$dispatch$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1$$anonfun$receive$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$NewParticipant$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$NewParticipant.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ParticipantLeft$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ParticipantLeft.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$PingEvent.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ReceivedMessage$.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ReceivedMessage.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$reportErrorsFlow$1$$anon$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$reportErrorsFlow$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$2.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$3.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$4.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$5$$anonfun$apply$6.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$5.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1$$anonfun$apply$7.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2.class
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice.class
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> /home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/Paing.class
+binary dependencies:
+19 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /opt/java/jdk1.8.0_45/jre/lib/rt.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /home/jarek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> /opt/java/jdk1.8.0_45/jre/lib/rt.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/com.lihaoyi/upickle_2.11/jars/upickle_2.11-0.3.4.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /opt/java/jdk1.8.0_45/jre/lib/rt.jar
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> /opt/java/jdk1.8.0_45/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+2 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> /home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+38 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> pl.setblack.mb137.server.Boot
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> pl.setblack.mb137.server.Boot$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> pl.setblack.mb137.server.Boot$$anonfun$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> pl.setblack.mb137.server.Boot$delayedInit$body
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.PingMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.PingMessage$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anon$2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anon$2$$anonfun$2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anon$2$$anonfun$3
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anonfun$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anonfun$1$$anon$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anonfun$1$$anon$1$$anonfun$dispatch$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$$anonfun$1$$anon$1$$anonfun$receive$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$NewParticipant
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$NewParticipant$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$ParticipantLeft
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$ParticipantLeft$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$PingEvent
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$ReceivedMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl.setblack.mb137.server.Pinger$ReceivedMessage$
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$reportErrorsFlow$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$reportErrorsFlow$1$$anon$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$3
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$4
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$5
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$route$1$$anonfun$apply$5$$anonfun$apply$6
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$websocketChatFlow$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$websocketChatFlow$2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl.setblack.mb137.server.Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1$$anonfun$apply$7
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> pl.setblack.mb137.Paing
+used names:
+300 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> <init>
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> ActorMaterializer
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> ActorSystem
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> App
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Boot
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Failure
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Http
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Predef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> RouteResult
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> RoutingLog
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> RoutingSettings
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> RoutingSetup
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> StringContext
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Success
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> Webservice
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> actor
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> akka
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> apply
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> asInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> bindAndHandle
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> binding
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> config
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> default
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> dispatcher
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> e
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> exception
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> fromActorSystem
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> getHostName
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> getInt
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> getMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> getPort
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> getString
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> http
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> interface
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> isInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> localAddress
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> materializer
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> mb137
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> onComplete
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> pl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> port
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> println
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> qual$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> route
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> route2HandlerFlow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> s
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> scala
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> scaladsl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> server
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> service
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> setblack
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> settings
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> shutdown
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> stream
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> system
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> util
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> value
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$10
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$11
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$12
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$13
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$14
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$15
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$16
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$17
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$18
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$7
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$8
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> x$9
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> !
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> $anon
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> &&
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> +
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> -
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> <init>
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ==
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> A1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> AbstractFunction1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> AbstractFunction2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Actor
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ActorRef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ActorSystem
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> AnyRef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> B1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ClassTag
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Flow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Function1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Keep
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> NewParticipant
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> None
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> OverflowStrategy
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ParticipantLeft
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> PingEvent
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> PingMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Pinger
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Predef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Product
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Props
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Receive
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ReceivedMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ScalaRunTime
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Serializable
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Set
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Sink
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Source
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> String
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> StringContext
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> Unit
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> _hashCode
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> _toString
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> actor
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> actorOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> actorRef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> actorRef2Scala
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> akka
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> apply
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> asInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> chatActor
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> chatInSink
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> context
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> dispatch
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> empty
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> eq
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> fail
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> foreach
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> in
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> isInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> map
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> mapMaterializedValue
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> materializeClassTag
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> mb137
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> message
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> msg
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> name
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> nic
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> none
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> out
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> package
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> person
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> pl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> qual$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> qual$2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> runtime
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> s
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> scala
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> scaladsl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> self
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> sendAdminMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> sender
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> server
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> setblack
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> stream
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> sub
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> subscriber
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> subscribers
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> subscribers_=
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> system
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> to
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> toChatMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> toString
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> txt
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> typedProductIterator
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> unchecked
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> watch
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> wrap
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> x$4
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> x$5
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> x$6
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> x$7
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> ||
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> $anon
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> /
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> <init>
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> A1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ActorSystem
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ApplyConverter
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Array
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> B1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> CaseW
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ClassTag
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ContentTypeResolver
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Context
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Date
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Default
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Directive
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Directives
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Flow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Function1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Join
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Knot
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Materializer
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Message
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ParamDef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ParamMagnet
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ParameterDirectives
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Pinger
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Predef
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> PushStage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> String
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> StringContext
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> StringRW
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Symbol
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> SyncDirective
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> T
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> TerminationDirective
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> TextMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Throwable
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Tuple2
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Tuple2W
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> TupleOps
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Unit
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Unmarshaller
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Webservice
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> Writer
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> actor
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> addByNameNullaryApply
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> addDirectiveApply
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> akka
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> apply
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> asInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> cause
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> collect
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> concurrent
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> create
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ctx
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> default
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> derive$macro$1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> derive$macro$1$lzy
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> derive$macro$4
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> directives
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> dispatcher
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> duration
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> elem
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> enhanceRouteWithConcatenation
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> forSymbol
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> get
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> getFromResource
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> getFromResourceDirectory
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> hac1
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> handleWebsocketMessages
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> http
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> identityUnmarshaller
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> injectMessage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> isInstanceOf
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> java
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> join0P
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> macroW
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> macroW0
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> map
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> materializeClassTag
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> mb137
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> model
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> msg
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> name
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ne
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> onUpstreamFailure
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> package
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> parameter
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> path
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pathPrefix
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pathSingleSlash
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pingFlow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> pl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> printStackTrace
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> println
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> push
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> reportErrorsFlow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> s
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> scala
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> scaladsl
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> schedule
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> scheduler
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> second
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> segmentStringToPathMatcher
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> sender
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> server
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> setblack
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> stage
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> stream
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> system
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> text
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> theChat
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> toString
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> transform
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> unchecked
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> unmarshalling
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> upickle
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> util
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> via
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> websocketChatFlow
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> write
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ws
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> ~
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> <init>
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> AnyRef
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> Paing
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> mb137
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> pl
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> scala
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> setblack
+product stamps:
+38 items
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/Paing.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$$anonfun$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot$delayedInit$body.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Boot.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/PingMessage$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/PingMessage.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2$$anonfun$2.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2$$anonfun$3.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anon$2.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1$$anonfun$dispatch$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1$$anonfun$receive$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1$$anon$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$$anonfun$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$NewParticipant$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$NewParticipant.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ParticipantLeft$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ParticipantLeft.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$PingEvent.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ReceivedMessage$.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger$ReceivedMessage.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Pinger.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$reportErrorsFlow$1$$anon$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$reportErrorsFlow$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$2.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$3.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$4.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$5$$anonfun$apply$6.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1$$anonfun$apply$5.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$route$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1$$anonfun$apply$7.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2$$anonfun$derive$macro$1$lzycompute$1$1.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice$$anonfun$websocketChatFlow$2.class -> lastModified(1440339845000)
+/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/pl/setblack/mb137/server/Webservice.class -> lastModified(1440339845000)
+source stamps:
+4 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> hash(2356fccb94f2055d8f4817df9a70191f7259d4ac)
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> hash(daceb6b3e7587ec249677052cb05d374428dd586)
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> hash(762c1ef5825041956eaff9d65bffecf16ea08376)
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> hash(8dca88c372bd5361fcaeace0b9c3dd1381f7e3af)
+binary stamps:
+8 items
+/home/jarek/.ivy2/cache/com.lihaoyi/upickle_2.11/jars/upickle_2.11-0.3.4.jar -> lastModified(1436853795000)
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar -> lastModified(1436421519000)
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0.jar -> lastModified(1436957975000)
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0.jar -> lastModified(1436958013000)
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar -> lastModified(1436957884000)
+/home/jarek/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar -> lastModified(1399042454000)
+/home/jarek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1435004218000)
+/opt/java/jdk1.8.0_45/jre/lib/rt.jar -> lastModified(1428686542000)
+class names:
+8 items
+/home/jarek/.ivy2/cache/com.lihaoyi/upickle_2.11/jars/upickle_2.11-0.3.4.jar -> upickle.LowPriX
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar -> akka.actor.ActorSystem
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0.jar -> akka.http.scaladsl.model.ws.Message
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0.jar -> akka.http.scaladsl.server.Directives
+/home/jarek/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar -> akka.stream.stage.PushStage
+/home/jarek/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar -> com.typesafe.config.Config
+/home/jarek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.runtime.AbstractPartialFunction
+/opt/java/jdk1.8.0_45/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+4 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD89HLuAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAACc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwhXZYFHQADG1hdGVyaWFsaXplcnNxAH4AC81B9gB0AAZzeXN0ZW11cQB+AAkAAAAdc3EAfgALWYdoZXQABm5vdGlmeXNxAH4AC1NawFF0AAdiaW5kaW5nc3EAfgALzn4qAnQABHdhaXRzcQB+AAuY88hgdAANJGFzSW5zdGFuY2VPZnNxAH4ACx7YQ0J0AARCb290c3EAfgAL2HAg7nQABmVxdWFsc3NxAH4AC9gZzs50AAxhc0luc3RhbmNlT2ZzcQB+AAsEOsJOdAAOZXhlY3V0aW9uU3RhcnRzcQB+AAstSC4udAAJaW50ZXJmYWNlc3EAfgALO7Xa63QADHN5bmNocm9uaXplZHNxAH4AC5DTDEp0AA0kaXNJbnN0YW5jZU9mc3EAfgALCfxUbHQABmNvbmZpZ3NxAH4AC5xfBQJ0AARtYWluc3EAfgALEZcLf3QAB3NlcnZpY2VzcQB+AAtJBnWLdAAJbm90aWZ5QWxsc3EAfgALK3hh5nQADGlzSW5zdGFuY2VPZnNxAH4AC4J+lWl0AARwb3J0c3EAfgALOdLyM3QAAj09c3EAfgALVAfE7nQABWNsb25lc3EAfgALlYJ+9XQACHRvU3RyaW5nc3EAfgALdNtEeXQABGFyZ3NzcQB+AAvKMEOKdAACIT1zcQB+AAuknUVqdAAIZ2V0Q2xhc3NzcQB+AAvxYpoNdAACbmVzcQB+AAvFyZ3xdAACZXFzcQB+AAt+oXZtdAALZGVsYXllZEluaXRzcQB+AAtztg6IdAACIyNzcQB+AAvCZReCdAAIZmluYWxpemVzcQB+AAtCBCWldAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBVeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADHhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAdcGwuc2V0YmxhY2subWIxMzcuc2VydmVyLkJvb3R1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAACdAAQc2NhbGEuZGVwcmVjYXRlZHQAGnNjYWxhLmRlcHJlY2F0ZWRPdmVycmlkaW5nc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AG8Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFVMAAlpbmhlcml0ZWRxAH4AVUwAB3BhcmVudHNxAH4AVXhxAH4AdnNxAH4AbwF1cQB+AFAAAAAAcHNxAH4AbwF1cQB+AFAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AFZxAH4AX3VxAH4AYAAAAAFzcgAUeHNidGkuYXBpLkFubm90YXRpb27eDoGi9lwKsgIAAlsACWFyZ3VtZW50c3QAH1tMeHNidGkvYXBpL0Fubm90YXRpb25Bcmd1bWVudDtMAARiYXNlcQB+AIB4cHVyAB9bTHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnQ7UZ2mjzglD3gCAAB4cAAAAAFzcgAceHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudNZFsdgDGxd8AgACTAAEbmFtZXEAfgAMTAAFdmFsdWVxAH4ADHhwdAAAdAAqKCJtYWluIHNob3VsZCBub3QgYmUgb3ZlcnJpZGRlbiIsIjIuMTEuMCIpc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAMTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AdXQAFGRlcHJlY2F0ZWRPdmVycmlkaW5nc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB1c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCac3EAfgBiAHEAfgArdXEAfgBlAAAAAHNxAH4AjXQABFVuaXRxAH4Ak3VyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAMTAADdHBlcQB+AIB4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AGh0AAVQbGFpbnEAfgA7c3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgCOWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgB1c3EAfgCNdAAFQXJyYXlxAH4Ak3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgCNdAAGU3RyaW5nc3EAfgCRc3EAfgCUdXEAfgCXAAAAA3NxAH4AmXQABGphdmFzcQB+AJl0AARsYW5ncQB+AJ5wc3EAfgBvAXVxAH4AtQAAAARzcQB+AI10AANBcHBxAH4Ak3NxAH4AjXQAC0RlbGF5ZWRJbml0cQB+AJNzcQB+AI10AAZPYmplY3RxAH4AuXNxAH4AjXQAA0FueXEAfgCTcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAABHNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0ABhwbC5zZXRibGFjay5tYjEzNy5zZXJ2ZXJzcQB+AMx0AAJwbHNxAH4AzHQAEXBsLnNldGJsYWNrLm1iMTM3c3EAfgDMdAALcGwuc2V0YmxhY2tzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAU9a8atfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUI1b8y5TyBV2PSBffmnAZH3JZ1Kw=
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDL4FG+AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAM3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cP+VcUx0AAZub3RpZnlzcQB+AAzqDv3odAAHdW5hcHBseXNxAH4ADC0iICx0AAdjdXJyaWVkc3EAfgAMsl+AsnQABG5hbWVzcQB+AAxQnEq8dAALUGluZ01lc3NhZ2VzcQB+AAy086ksdAAEd2FpdHNxAH4ADJZq/ZR0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADA/mCqJ0AA0kYXNJbnN0YW5jZU9mc3EAfgAMoUdMaXQAB2NvbXBvc2VzcQB+AAzYRcEedAAMcHJvZHVjdEFyaXR5c3EAfgAMFnkeb3QABmVxdWFsc3NxAH4ADMFVGqx0AApzdWJzY3JpYmVyc3EAfgAMsRE02HQADGFzSW5zdGFuY2VPZnNxAH4ADET1yZ10AAxzeW5jaHJvbml6ZWRzcQB+AAx0fxK7dAANJGlzSW5zdGFuY2VPZnNxAH4ADNqq1vx0AAZjcmVhdGVzcQB+AAw/X4CTdAAHYW5kVGhlbnNxAH4ADJwCGzx0AAZ0dXBsZWRzcQB+AAyzhgJ1dAANaW5qZWN0TWVzc2FnZXNxAH4ADDosflJ0AAhjYW5FcXVhbHNxAH4ADJ7JRzJ0AA1wcm9kdWN0UHJlZml4c3EAfgAM7e7lpHQACW5vdGlmeUFsbHNxAH4ADNzWCkx0AAtyZWFkUmVzb2x2ZXNxAH4ADEjCbFF0AAN0eHRzcQB+AAzh+r4sdAAMaXNJbnN0YW5jZU9mc3EAfgAMLPVGiXQABjxpbml0PnNxAH4ADDbfabh0AAlQaW5nRXZlbnRzcQB+AAxVYr3PdAAFYXBwbHlzcQB+AAympiLddAACPT1zcQB+AAz7kCckdAAPUGFydGljaXBhbnRMZWZ0c3EAfgAMN24up3QABWNsb25lc3EAfgAMMNIosHQABGNvcHlzcQB+AAyZi7BwdAAGc2VuZGVyc3EAfgAMK03ynXQAB21lc3NhZ2VzcQB+AAyXJYqrdAAIdG9TdHJpbmdzcQB+AAzYaQ4sdAANdG9DaGF0TWVzc2FnZXNxAH4ADJKZXAp0AAIhPXNxAH4ADM8Hfrt0AAhnZXRDbGFzc3NxAH4ADMn74It0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADI//0TV0AAhwaW5nRmxvd3NxAH4ADOALg3Z0AA5OZXdQYXJ0aWNpcGFudHNxAH4ADBFg6vl0AAZQaW5nZXJzcQB+AAy+akqndAACbmVzcQB+AAzZnyHodAAPUmVjZWl2ZWRNZXNzYWdlc3EAfgAMGj3/KXQAA25pY3NxAH4ADFdqq1R0AAJlcXNxAH4ADJJhe4p0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAwP+7zDdAACIyNzcQB+AAx8LSOXdAAIZmluYWxpemVzcQB+AAwoJSeCdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAxcBJd4dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAADc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgB9eHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAkcGwuc2V0YmxhY2subWIxMzcuc2VydmVyLlBpbmdNZXNzYWdldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgCWeHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCVAHBzcQB+AJpzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AfUwACWluaGVyaXRlZHEAfgB9TAAHcGFyZW50c3EAfgB9eHEAfgCec3EAfgCVAHBzcQB+AJp1cQB+AHgAAAAAc3EAfgCVAHBzcQB+AJp1cQB+AHgAAAAAc3EAfgCVAHBzcQB+AJp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AJ10AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AJ1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+ALtzcQB+AK5xAH4AsXNxAH4AsnNxAH4AtXVxAH4AuAAAAANzcQB+ALp0AARqYXZhc3EAfgC6dAACaW9xAH4Av3NxAH4ArnQAB1Byb2R1Y3RxAH4AtHNxAH4ArnQABkVxdWFsc3EAfgC0c3EAfgCudAAGT2JqZWN0c3EAfgCyc3EAfgC1dXEAfgC4AAAAA3NxAH4AunEAfgDFc3EAfgC6dAAEbGFuZ3EAfgC/c3EAfgCudAADQW55cQB+ALRzcQB+AHpxAH4Ah3VxAH4AiAAAAABzcQB+AIoBdAAfcGwuc2V0YmxhY2subWIxMzcuc2VydmVyLlBpbmdlcnVxAH4AjQAAAAB+cQB+AI90AAVUcmFpdHVxAH4AkwAAAABzcQB+AJUAcHNxAH4AmnEAfgCfc3EAfgCVAHBzcQB+AJpzcQB+AKJzcQB+AJUAcHNxAH4AmnVxAH4AeAAAAABzcQB+AJUAcHNxAH4AmnVxAH4AeAAAAABzcQB+AJUAcHNxAH4AmnVxAH4ArAAAAAJzcQB+AK5xAH4AzXNxAH4AsnNxAH4AtXVxAH4AuAAAAANzcQB+ALpxAH4AxXNxAH4AunEAfgDTcQB+AL9zcQB+AK5xAH4A1XNxAH4AsnNxAH4AtXVxAH4AuAAAAAJzcQB+ALpxAH4AvXEAfgC/c3EAfgB6cQB+AId1cQB+AIgAAAAAc3EAfgCKAHQAH3BsLnNldGJsYWNrLm1iMTM3LnNlcnZlci5QaW5nZXJ1cQB+AI0AAAAAfnEAfgCPdAAGTW9kdWxldXEAfgCTAAAAAHNxAH4AlQBwc3EAfgCacQB+AJ9zcQB+AJUAcHNxAH4AmnNxAH4AonNxAH4AlQBwc3EAfgCadXEAfgB4AAAAAHNxAH4AlQBwc3EAfgCadXEAfgB4AAAAAHNxAH4AlQBwc3EAfgCadXEAfgCsAAAAAnNxAH4ArnEAfgDNc3EAfgCyc3EAfgC1dXEAfgC4AAAAA3NxAH4AunEAfgDFc3EAfgC6cQB+ANNxAH4Av3NxAH4ArnEAfgDVc3EAfgCyc3EAfgC1dXEAfgC4AAAAAnNxAH4AunEAfgC9cQB+AL91cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAABHNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0ABhwbC5zZXRibGFjay5tYjEzNy5zZXJ2ZXJzcQB+ARp0AAJwbHNxAH4BGnQAEXBsLnNldGJsYWNrLm1iMTM3c3EAfgEadAALcGwuc2V0YmxhY2tzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAU9a8atfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU2s62s+dYfsJJZ3BSywXTdEKN1YY=
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBINmtAAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAJc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwf7BwrHQAJnN0cmluZ05hbWVPcHRpb25SZWNlcHRhY2xlMlBhdGhNYXRjaGVyc3EAfgALUP9wJ3QAAmV2c3EAfgALoj0AUXQAGnNlZ21lbnRTdHJpbmdUb1BhdGhNYXRjaGVyc3EAfgALgWme2nQACXN0cmluZzJOUnNxAH4ACym/X1R0AB1lbmhhbmNlUm91dGVXaXRoQ29uY2F0ZW5hdGlvbnNxAH4ACwCZIqZ0AAlzeW1ib2wyTlJzcQB+AAtBE9IfdAAgc3RyaW5nRXh0cmFjdGlvblBhaXIyUGF0aE1hdGNoZXJzcQB+AAvxf68AdAAUdmFsdWVNYXAyUGF0aE1hdGNoZXJzcQB+AAuEGPP6dAARcmVnZXgyUGF0aE1hdGNoZXJ1cQB+AAkAAADHc3EAfgALRr0rCnQACWZvcm1GaWVsZHNxAH4AC1hTWmJ0ABB3aXRoUmFuZ2VTdXBwb3J0c3EAfgALBRlOznQAFHBhdGhFbmRPclNpbmdsZVNsYXNoc3EAfgALc81zC3QABm5vdGlmeXNxAH4AC5KoCQZ0AAlJbnROdW1iZXJzcQB+AAuNMYcMdAARYXV0aGVudGljYXRlQmFzaWNzcQB+AAuRcxhfdAAHdGhlQ2hhdHNxAH4AC6Z7r+R0AA9wYXRoU2luZ2xlU2xhc2hzcQB+AAsNTv7rdAAYcmVzcG9uc2VFbmNvZGluZ0FjY2VwdGVkc3EAfgALaoMLpnQABm1ldGhvZHNxAH4AC5OtFXt0AARwb3N0c3EAfgALaNyKa3QAEm1hcFJvdXRlUmVzdWx0V2l0aHNxAH4ACxrSG3t0ABFoZWFkZXJWYWx1ZUJ5TmFtZXNxAH4AC5Akj7V0ABVvcHRpb25hbEhlYWRlclZhbHVlUEZzcQB+AAvu8MA+dAAKV2Vic2VydmljZXNxAH4AC/SprL10AAh0cHJvdmlkZXNxAH4AC6X2ASx0AAlwYXJhbWV0ZXJzcQB+AAuX5dZtdAANZXh0cmFjdE1ldGhvZHNxAH4AC2HZNQt0ABlyZXNwb25kV2l0aERlZmF1bHRIZWFkZXJzc3EAfgALXj2wKnQAEnJlc3BvbmRXaXRoSGVhZGVyc3NxAH4AC7gTzp90AAR3YWl0c3EAfgALFoNV3HQAFWxpc3REaXJlY3RvcnlDb250ZW50c3NxAH4AC15EkyN0AA0kYXNJbnN0YW5jZU9mc3EAfgALuVZAqHQABHBhdGhzcQB+AAu18sg/dAAKaW5zdGFuY2VPZnNxAH4AC0CFPP50AAdOZXV0cmFsc3EAfgALsCiuu3QAB2NvbXBvc2VzcQB+AAtFuYFTdAAIcmVkaXJlY3RzcQB+AAum7bOQdAAScmVxdWVzdEVudGl0eUVtcHR5c3EAfgALIHInlnQADWhlYWRlclZhbHVlUEZzcQB+AAvH47K8dAAHUGF0aEVuZHNxAH4AC7A981N0AA9mcm9tRGVjaW1hbENoYXJzcQB+AAtpFE03dAAGZXF1YWxzc3EAfgALo7i0dHQAD0F1dGhlbnRpY2F0b3JQRnNxAH4AC2dtbyJ0AAhtaW51c09uZXNxAH4AC5SEFat0ABFyYXdQYXRoUHJlZml4VGVzdHNxAH4AC/nfXOx0ABhnZXRGcm9tUmVzb3VyY2VEaXJlY3RvcnlzcQB+AAvECqr1dAATb3B0aW9uYWxIZWFkZXJWYWx1ZXNxAH4AC6HGwFx0ABBnZXRGcm9tRGlyZWN0b3J5c3EAfgALmKBjSHQACHRleHRyYWN0c3EAfgALGa6Ic3QACm1heERpdkJhc2VzcQB+AAsmFaRGdAARd2Vic29ja2V0Q2hhdEZsb3dzcQB+AAs45ggddAAiZ2V0RnJvbVJlc291cmNlRGlyZWN0b3J5JGRlZmF1bHQkMnNxAH4AC4q6snN0AAttYXBTZXR0aW5nc3NxAH4AC+VQa4N0AARoZWFkc3EAfgALsgU4C3QADGFzSW5zdGFuY2VPZnNxAH4ACxZz8mV0ABBoYW5kbGVSZWplY3Rpb25zc3EAfgALpLa3jnQACnBhdGhQcmVmaXhzcQB+AAtHaTordAANSGV4TG9uZ051bWJlcnNxAH4AC5BEhH50AAxIZXhJbnROdW1iZXJzcQB+AAvaR2SgdAAEaG9zdHNxAH4AC9M3t4d0ABhyZXNwb25kV2l0aERlZmF1bHRIZWFkZXJzcQB+AAvp4HqddAAMcGFyYW1ldGVyTWFwc3EAfgALEpivo3QAEHJlcG9ydEVycm9yc0Zsb3dzcQB+AAs2NJ0ddAAKTG9uZ051bWJlcnNxAH4AC/5IpeZ0AAh2YWxpZGF0ZXNxAH4AC7m9OYh0AAxzeW5jaHJvbml6ZWRzcQB+AAv8OB/edAATcmVqZWN0RW1wdHlSZXNwb25zZXNxAH4ACxGfZ/l0AAhmcm9tQ2hhcnNxAH4AC7WDtVt0AAd1bmFyeV8hc3EAfgALbArZlXQAD2dldEZyb21SZXNvdXJjZXNxAH4AC8gZ0qF0ABdoYW5kbGVXZWJzb2NrZXRNZXNzYWdlc3NxAH4ACz2772F0ABJyZXF1ZXN0RW5jb2RlZFdpdGhzcQB+AAszc8EIdAAVcmVjb3ZlclJlamVjdGlvbnNXaXRoc3EAfgAL/i7CWXQADSRpc0luc3RhbmNlT2ZzcQB+AAsrWfjxdAAPY2FuY2VsUmVqZWN0aW9uc3EAfgALLLiILXQAIHJlZGlyZWN0VG9UcmFpbGluZ1NsYXNoSWZNaXNzaW5nc3EAfgAL+6vf0nQAB2FuZFRoZW5zcQB+AAv+lWVTdAAMZGVsZXRlQ29va2llc3EAfgAL/F5WKnQAAmFzc3EAfgALCYTk6nQABFJlc3RzcQB+AAuViO/zdAANZXh0cmFjdFNjaGVtZXNxAH4AC8duhUh0ABJBc3luY0F1dGhlbnRpY2F0b3JzcQB+AAu3la6gdAAYYXV0aGVudGljYXRlQmFzaWNQRkFzeW5jc3EAfgAL8KwU6XQAAXxzcQB+AAs2zb9hdAALZXh0cmFjdEhvc3RzcQB+AAtNvA0bdAAWZGVsZXRlQ29va2llJGRlZmF1bHQkM3NxAH4AC94VPSJ0ABJtYXBSZXNwb25zZUhlYWRlcnNzcQB+AAuNIoGSdAAUcmVxdWVzdEVudGl0eVByZXNlbnRzcQB+AAsTOHICdAAOZW5jb2RlUmVzcG9uc2VzcQB+AAtGw1dgdAAVZXh0cmFjdFJlcXVlc3RDb250ZXh0c3EAfgALHIMH0nQAEmVuY29kZVJlc3BvbnNlV2l0aHNxAH4AC8sfi6d0AAdwcm92aWRlc3EAfgALDu0BZ3QABnJlamVjdHNxAH4AC5lM0KV0AAlub3RpZnlBbGxzcQB+AAsFENXvdAAaZ2V0RnJvbUJyb3dzZWFibGVEaXJlY3RvcnlzcQB+AAvMmd9pdAALY29uZGl0aW9uYWxzcQB+AAtfcEuodAAZb3B0aW9uYWxIZWFkZXJWYWx1ZUJ5TmFtZXNxAH4ACxu1hGN0AAR0bWFwc3EAfgALuahRInQAEm92ZXJyaWRlU3RhdHVzQ29kZXNxAH4AC2Nb0dl0AApleHRyYWN0VXJpc3EAfgALpThvMHQADGlzSW5zdGFuY2VPZnNxAH4AC96xwXh0ACJyZWRpcmVjdFRvTm9UcmFpbGluZ1NsYXNoSWZQcmVzZW50c3EAfgALiWWQx3QAB3BhdGhFbmRzcQB+AAvaReH3dAANcmF3UGF0aFByZWZpeHNxAH4AC9fl+Ql0AAdvcHRpb25zc3EAfgALNmrzaXQACm1hcFJlcXVlc3RzcQB+AAsklhKedAAJb25TdWNjZXNzc3EAfgALYfvnNnQAEW1hcFJlc3BvbnNlRW50aXR5c3EAfgALLmdobHQAFHdpdGhFeGVjdXRpb25Db250ZXh0c3EAfgALgpSOonQAEmRlZmF1bHRDbGFzc0xvYWRlcnNxAH4AC1Bz7pN0AAhmYWlsV2l0aHNxAH4AC6BuYml0ABBtYXBVbm1hdGNoZWRQYXRoc3EAfgAL9TM363QABjxpbml0PnNxAH4AC1cqjDl0AAtnZXRGcm9tRmlsZXNxAH4AC7IjK690ABBsb2dSZXF1ZXN0UmVzdWx0c3EAfgAL1Ec2NXQADW1hcElubmVyUm91dGVzcQB+AAsEOm7MdAAHU2VnbWVudHNxAH4AC4MC5Yt0AAhjb21wbGV0ZXNxAH4ACwGd+JZ0AAVhcHBseXNxAH4AC22XOQh0ABFtYXBSZXF1ZXN0Q29udGV4dHNxAH4AC82nEg90AA5wYXRoUHJlZml4VGVzdHNxAH4AC7SFFEJ0AA1BdXRoZW50aWNhdG9yc3EAfgALp2+2x3QAHGdldEZyb21Ccm93c2VhYmxlRGlyZWN0b3JpZXNzcQB+AAtiWTY3dAAMY29tcGxldGVXaXRoc3EAfgAL3JWgQ3QADHBhcmFtZXRlclNlcXNxAH4AC5c+IfV0AA5vcHRpb25hbENvb2tpZXNxAH4ACy8MUdN0AAI9PXNxAH4AC171wep0AAZzY2hlbWVzcQB+AAsVYd7AdAAGY29va2llc3EAfgALX0MnU3QAFEF1dGhlbnRpY2F0aW9uUmVzdWx0c3EAfgALSK8+7XQABVNsYXNoc3EAfgAL4gC+InQABWNsb25lc3EAfgALhYqPh3QACWF1dGhvcml6ZXNxAH4AC8zdJcR0ABRtYXBSb3V0ZVJlc3VsdEZ1dHVyZXNxAH4AC2PbClZ0AAtoZWFkZXJWYWx1ZXNxAH4AC/SGdrl0AApoYW5kbGVXaXRoc3EAfgALChTI3XQAEHdpdGhNYXRlcmlhbGl6ZXJzcQB+AAuILwxHdAAGZGVsZXRlc3EAfgALaSiJWXQAEXJlY292ZXJSZWplY3Rpb25zc3EAfgALVprtgHQAFmRlbGV0ZUNvb2tpZSRkZWZhdWx0JDJzcQB+AAtt77ujdAAGZW50aXR5c3EAfgALruxSyXQACXNldENvb2tpZXNxAH4ACzPdcaZ0AARwYXNzc3EAfgALopz0bnQAD2V4dHJhY3RDbGllbnRJUHNxAH4ACzn5oD50AANwdXRzcQB+AAszsD+idAATYXV0aGVudGljYXRlQmFzaWNQRnNxAH4AC3CzTx90ABFwYXJhbWV0ZXJNdWx0aU1hcHNxAH4AC1OZc7t0ABByZXBlYXQkZGVmYXVsdCQzc3EAfgALO9NsBnQAEG1hcFJvdXRlUmVzdWx0UEZzcQB+AAt1/6bGdAAIdG9TdHJpbmdzcQB+AAu+7pardAATZXh0cmFjdE1hdGVyaWFsaXplcnNxAH4AC4UZfTV0AAlsb2dSZXN1bHRzcQB+AAtEw+AmdAAbb3ZlcnJpZGVNZXRob2RXaXRoUGFyYW1ldGVyc3EAfgALR7b2RXQAB3dpdGhMb2dzcQB+AAu8sYg7dAAIU2VnbWVudHNzcQB+AAvKJCqpdAAObWFwUm91dGVSZXN1bHRzcQB+AAv/Fu1ddAACIT1zcQB+AAufNbfMdAADZ2V0c3EAfgALnwDwjHQABXJvdXRlc3EAfgALSOqIbnQAFEFzeW5jQXV0aGVudGljYXRvclBGc3EAfgALYf7eHHQADnBhdGhTdWZmaXhUZXN0c3EAfgALlDqmOXQACHRmbGF0TWFwc3EAfgALacaMkHQACGdldENsYXNzc3EAfgALw12kkHQABnJlcGVhdHNxAH4ACx6tNgd0ABFkZWNvZGVSZXF1ZXN0V2l0aHNxAH4AC8QZ+rl0ABFoZWFkZXJWYWx1ZUJ5VHlwZXNxAH4ACz9DMDZ0ABBoYW5kbGVFeGNlcHRpb25zc3EAfgALI6RLgnQACnBhdGhTdWZmaXhzcQB+AAvcZNz/dAAVY29tcGxldGVPclJlY292ZXJXaXRoc3EAfgALqakOSXQADGNoYWxsZW5nZUZvcnNxAH4AC50llIx0ABRtYXBSb3V0ZVJlc3VsdFdpdGhQRnNxAH4AC954fTx0AApvbkNvbXBsZXRlc3EAfgALkfUz6XQAC21hcFJlc3BvbnNlc3EAfgAL9JHmyHQABXBhdGNoc3EAfgALo/uDiHQADm5vdGhpbmdNYXRjaGVyc3EAfgALdNIck3QAEGNhbmNlbFJlamVjdGlvbnNzcQB+AAuOYq8bdAAISmF2YVVVSURzcQB+AAsonw2EdAAKbG9nUmVxdWVzdHNxAH4AC9LE2Wp0AAhSZXN0UGF0aHNxAH4AC6NBbbR0AAJuZXNxAH4AC0zJFBt0AA1tYXBSZWplY3Rpb25zc3EAfgALivA4ZXQAF2V4dHJhY3RFeGVjdXRpb25Db250ZXh0c3EAfgALdNF0mnQACmZvcm1GaWVsZHNzcQB+AAtlDaemdAAJdHJhbnNmb3Jtc3EAfgALzSoCHHQAGWdldEZyb21SZXNvdXJjZSRkZWZhdWx0JDNzcQB+AAssb8hVdAAWYXV0aGVudGljYXRlQmFzaWNBc3luY3NxAH4AC8kGPO50AApwYXJhbWV0ZXJzc3EAfgALTluNPHQAAX5zcQB+AAtQAyIHdAAUZXh0cmFjdFVubWF0Y2hlZFBhdGhzcQB+AAsoSgppdAANTnVtYmVyTWF0Y2hlcnNxAH4AC1s4Edh0ACFhdXRoZW50aWNhdGVPclJlamVjdFdpdGhDaGFsbGVuZ2VzcQB+AAujsKMldAACZXFzcQB+AAuy+tyUdAAMRG91YmxlTnVtYmVyc3EAfgALsqA2ynQADHdpdGhTZXR0aW5nc3NxAH4ACwjBA610AAEvc3EAfgALRQ3R8XQADmV4dHJhY3RSZXF1ZXN0c3EAfgALZezepnQACmV4dHJhY3RMb2dzcQB+AAsVSmwwdAASZXh0cmFjdENyZWRlbnRpYWxzc3EAfgALZ6IQ93QADWRlY29kZVJlcXVlc3RzcQB+AAs920sjdAARcmVzcG9uZFdpdGhIZWFkZXJzcQB+AAv3xe/8dAACIyNzcQB+AAupya4MdAAIZmluYWxpemVzcQB+AAs/TDO3dAAHZXh0cmFjdHNxAH4ACxlCwoB0AAhoYXNoQ29kZXNxAH4AC85KKaN0AA9leHRyYWN0U2V0dGluZ3NzcQB+AAsSSWm2dAALZnJvbUhleENoYXJzcQB+AAvTB9CPdAAZb3B0aW9uYWxIZWFkZXJWYWx1ZUJ5VHlwZXNxAH4ACx5/dEt0ABFzZXBhcmF0ZU9uU2xhc2hlc3NyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+Abd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ACNwbC5zZXRibGFjay5tYjEzNy5zZXJ2ZXIuV2Vic2VydmljZXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgHPAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgG3TAAJaW5oZXJpdGVkcQB+AbdMAAdwYXJlbnRzcQB+Abd4cQB+AdZzcQB+Ac8BdXEAfgGyAAAAAHBzcQB+Ac8BdXEAfgGyAAAAAHBzcQB+Ac8BdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAB1zcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgHVdAAKRGlyZWN0aXZlc3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4B1XNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAABXNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEYWtrYXNxAH4B7nQABGh0dHBzcQB+Ae50AAhzY2FsYWRzbHNxAH4B7nQABnNlcnZlcnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgHvc3EAfgHidAATV2Vic29ja2V0RGlyZWN0aXZlc3NxAH4B5nNxAH4B6XVxAH4B7AAAAAZzcQB+Ae50AARha2thc3EAfgHudAAEaHR0cHNxAH4B7nQACHNjYWxhZHNsc3EAfgHudAAGc2VydmVyc3EAfgHudAAKZGlyZWN0aXZlc3EAfgH5c3EAfgHidAASU2VjdXJpdHlEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABBTY2hlbWVEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0AA9Sb3V0ZURpcmVjdGl2ZXNxAH4B/HNxAH4B4nQAFVJlc3BvbmRXaXRoRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAPUmFuZ2VEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0AA5QYXRoRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAfSW1wbGljaXRQYXRoTWF0Y2hlckNvbnN0cnVjdGlvbnEAfgHoc3EAfgHidAAMUGF0aE1hdGNoZXJzcQB+AehzcQB+AeJ0ABNQYXJhbWV0ZXJEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0AA5NaXNjRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAQTWV0aG9kRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAVTWFyc2hhbGxpbmdEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0AA5Ib3N0RGlyZWN0aXZlc3EAfgH8c3EAfgHidAAQSGVhZGVyRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAQRnV0dXJlRGlyZWN0aXZlc3EAfgH8c3EAfgHidAATRm9ybUZpZWxkRGlyZWN0aXZlc3EAfgH8c3EAfgHidAAcVG9OYW1lUmVjZXB0YWNsZUVuaGFuY2VtZW50c3NxAH4B5nNxAH4B6XVxAH4B7AAAAAVzcQB+Ae50AARha2thc3EAfgHudAAEaHR0cHNxAH4B7nQACHNjYWxhZHNsc3EAfgHudAAGY29tbW9ucQB+AflzcQB+AeJ0ABlGaWxlQW5kUmVzb3VyY2VEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABNFeGVjdXRpb25EaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABBDb2RpbmdEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABNEZWJ1Z2dpbmdEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABBDb29raWVEaXJlY3RpdmVzcQB+AfxzcQB+AeJ0ABhDYWNoZUNvbmRpdGlvbkRpcmVjdGl2ZXNxAH4B/HNxAH4B4nQAD0Jhc2ljRGlyZWN0aXZlc3EAfgH8c3EAfgHidAASUm91dGVDb25jYXRlbmF0aW9ucQB+AehzcQB+AeJ0AAZPYmplY3RzcQB+AeZzcQB+Ael1cQB+AewAAAADc3EAfgHudAAEamF2YXNxAH4B7nQABGxhbmdxAH4B+XNxAH4B4nQAA0FueXNxAH4B5nNxAH4B6XVxAH4B7AAAAAJzcQB+Ae50AAVzY2FsYXEAfgH5cHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAABHNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0ABhwbC5zZXRibGFjay5tYjEzNy5zZXJ2ZXJzcQB+Alh0AAJwbHNxAH4CWHQAEXBsLnNldGJsYWNrLm1iMTM3c3EAfgJYdAALcGwuc2V0YmxhY2tzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAU9a8atfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUdiwe9YJQQZVur/nWW//s8W6gg3Y=
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAUr3EEAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cKZOrL10AAZub3RpZnlzcQB+AAy1LZttdAAFUGFpbmdzcQB+AAwet4dAdAAEd2FpdHNxAH4ADIxMwBh0AA0kYXNJbnN0YW5jZU9mc3EAfgAMVm0UeXQABmVxdWFsc3NxAH4ADEoXoa90AAxhc0luc3RhbmNlT2ZzcQB+AAwudDaIdAAMc3luY2hyb25pemVkc3EAfgAM1BF5rXQADSRpc0luc3RhbmNlT2ZzcQB+AAxP74T3dAAJbm90aWZ5QWxsc3EAfgAMhZhP+HQADGlzSW5zdGFuY2VPZnNxAH4ADEVFWUV0AAY8aW5pdD5zcQB+AAzr1JjGdAACPT1zcQB+AAwa66QbdAAFY2xvbmVzcQB+AAzSIkn8dAAIdG9TdHJpbmdzcQB+AAyI+GM1dAACIT1zcQB+AAzKv8lOdAAIZ2V0Q2xhc3NzcQB+AAz8ihkDdAACbmVzcQB+AAwHydYqdAACZXFzcQB+AAyNS28cdAACIyNzcQB+AAwID2MgdAAIZmluYWxpemVzcQB+AAyFc8+5dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBBeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAXcGwuc2V0YmxhY2subWIxMzcuUGFpbmd1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4AWQFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBgc3EAfgBZAXVxAH4APAAAAABwc3EAfgBZAXVxAH4APAAAAABwc3EAfgBZAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AX3QABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AX3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AeHQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AeXNxAH4AbHQAA0FueXNxAH4AcHNxAH4Ac3VxAH4AdgAAAAJzcQB+AHh0AAVzY2FsYXEAfgB/cHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAJwbHNxAH4AiXQAEXBsLnNldGJsYWNrLm1iMTM3c3EAfgCJdAALcGwuc2V0YmxhY2tzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAU9a8atfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUjcqIw3K9U2H8rqzgucPdE4H3468=
+external apis:
+0 items
+source infos:
+4 items
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala -> 
+AAAAAAAAAAA=
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Pinger.scala -> 
+AAAAAAAAAAA=
+/home/jarek/dev/lsa/mb137/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservce.scala -> 
+AAAAAAAAAAA=
+/home/jarek/dev/lsa/mb137/app/shared/src/main/scala/pl/setblack/mb137/Paing.scala -> 
+AAAAAAAAAAA=
+compilations:
+29 items
+00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1Wbdjp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1WcDbl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1XfZ7t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+03 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1ekVBN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+04 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1nnwZh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+05 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1np8dd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+06 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1nzqtF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+07 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1oWUbB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+08 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1og9UF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1pe/0N1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1phdV51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1pjo6t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+12 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1pwfkx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+13 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1pyflJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+14 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1p0H591cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+15 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1p7GeN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+16 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qANJR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+17 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qD86t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+18 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qGkuF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+19 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qGyu51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+20 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qJ94Z1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+21 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qOp8F1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+22 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1qPemV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+23 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1rGp+51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+24 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1rMvId1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+25 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1rb4e91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+26 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1rczf91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+27 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1ri9E11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+28 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABT1rxq191cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2phcmVrL2Rldi9sc2EvbWIxMzcvYXBwL2p2bS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==

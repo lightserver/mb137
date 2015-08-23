@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app-sources.iml" filepath="$PROJECT_DIR$/.idea/modules/app-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appJS.iml" filepath="$PROJECT_DIR$/.idea/modules/appJS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appJS-build.iml" filepath="$PROJECT_DIR$/.idea/modules/appJS-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appJVM.iml" filepath="$PROJECT_DIR$/.idea/modules/appJVM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appJVM-build.iml" filepath="$PROJECT_DIR$/.idea/modules/appJVM-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/jvm/.idea/modules/jvm.iml" filepath="$PROJECT_DIR$/app/jvm/.idea/modules/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/jvm/.idea/modules/jvm-build.iml" filepath="$PROJECT_DIR$/app/jvm/.idea/modules/jvm-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mb137.iml" filepath="$PROJECT_DIR$/.idea/modules/mb137.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mb137-build.iml" filepath="$PROJECT_DIR$/.idea/modules/mb137-build.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: com.github.japgolly.scalajs-react:ext-scalaz71_sjs0.6_2.11:0.8.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.github.japgolly.scalajs-react/ext-scalaz71_sjs0.6_2.11/jars/ext-scalaz71_sjs0.6_2.11-0.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.github.japgolly.scalajs-react/ext-scalaz71_sjs0.6_2.11/docs/ext-scalaz71_sjs0.6_2.11-0.8.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.github.japgolly.scalajs-react/ext-scalaz71_sjs0.6_2.11/srcs/ext-scalaz71_sjs0.6_2.11-0.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,17 @@
+[info] Fast optimizing /home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-fastopt.js
+[debug] Linker: Read info: 26961 us
+[debug] Linker: Compute reachability: 248514 us
+[debug] Linker: Assemble LinkedClasses: 303480 us
+[debug] Linker: cache stats: reused: 10026 -- invalidated: 7 -- trees read: 5
+[debug] Linker: 599368 us
+[debug] Inc. optimizer: Batch mode: false
+[debug] Inc. optimizer: Incremental part: 75671 us
+[debug] Inc. optimizer: Optimizing 0 methods.
+[debug] Inc. optimizer: Optimizer part: 216 us
+[debug] Inc. optimizer: 78591 us
+[debug] Refiner: Compute reachability: 129343 us
+[debug] Refiner: Assemble LinkedClasses: 5819 us
+[debug] Refiner: 135341 us
+[debug] Emitter: Class tree cache stats: reused: 409 -- invalidated: 5
+[debug] Emitter: Method tree cache stats: resued: 1766 -- invalidated: 0
+[debug] Emitter (write output): 152681 us
