@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$/../../app/shared">
       <sourceFolder url="file://$MODULE_DIR$/../../app/shared/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../app/shared/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../app/shared/src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -45,9 +46,9 @@
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-parsing-experimental_2.11:1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-stream-experimental_2.11:1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.reactivestreams:reactive-streams:1.0.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:derive_sjs0.6_2.11:0.3.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_sjs0.6_2.11:0.3.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:derive_2.11:0.3.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_2.11:0.3.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_sjs0.6_2.11:0.2.8:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_2.11:0.2.8:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-reflect:2.11.2:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.11:2.2.1:jar" level="project" />
   </component>
 </module>

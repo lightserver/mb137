@@ -18,3 +18,9 @@ reload
 compile
 reload
 reload
+fastOptJS
+web
+compile
+fastOptJS
+appJVM/run
+test

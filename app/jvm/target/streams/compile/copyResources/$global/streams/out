@@ -1,7 +1,7 @@
-[debug] Copy resource mappings: 
-[debug] 	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/web,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/web)
-[debug] 	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/application.conf,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/application.conf)
-[debug] 	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/web/index.html,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/web/index.html)
-[debug] 	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-fastopt.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-fastopt.js)
-[debug] 	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-jsdeps.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-jsdeps.js)
-[debug] 	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-launcher.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-launcher.js)
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/web,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/web)[0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/application.conf,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/jvm/../jvm/src/main/resources/web/index.html,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/web/index.html)[0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-fastopt.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-fastopt.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-jsdeps.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-jsdeps.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/jarek/dev/lsa/mb137/app/js/target/scala-2.11/app-launcher.js,/home/jarek/dev/lsa/mb137/app/jvm/target/scala-2.11/classes/app-launcher.js)[0m

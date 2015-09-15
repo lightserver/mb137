@@ -20,7 +20,8 @@ val app = crossProject.settings(
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "scalatags" % "0.5.1",
     //"com.lihaoyi" %%% "utest" % "0.3.0",
-    "com.lihaoyi" %%% "upickle" % "0.3.4"
+    "com.lihaoyi" %%% "upickle" % "0.2.8"
+
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 
@@ -41,7 +42,8 @@ val app = crossProject.settings(
       "io.spray" %% "spray-routing" % "1.3.2",
       "com.typesafe.akka" %% "akka-actor" % "2.3.6",
       "org.scalaz" %% "scalaz-core" % "7.1.2",
-      "com.typesafe.akka" %% "akka-http-experimental" % "1.0"
+      "com.typesafe.akka" %% "akka-http-experimental" % "1.0",
+      "org.scalatest" %% "scalatest" % "2.2.1" % "test"
     )
   )
 

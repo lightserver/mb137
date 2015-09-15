@@ -4,7 +4,7 @@
 		module="mb137_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20150823053458"
+		publication="20150915092712"
 	>
 		<description>
 		mb137
@@ -27,7 +27,9 @@
 	</configurations>
 	<publications>
 		<artifact name="mb137_2.10" type="pom" ext="pom" conf="pom"/>
-		<artifact name="mb137_2.10" type="jar" ext="jar" conf="optional" e:classifier="download, resolveClassifiers, resolveSbtClassifiers"/>
+		<artifact name="mb137_2.10" type="jar" ext="jar" conf="compile"/>
+		<artifact name="mb137_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="mb137_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.5" conf="scala-tool->default,optional(default)"/>

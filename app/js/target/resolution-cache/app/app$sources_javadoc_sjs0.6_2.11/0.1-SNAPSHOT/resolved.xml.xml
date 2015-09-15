@@ -4,7 +4,7 @@
 		module="app$sources_javadoc_sjs0.6_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150823065832"
+		publication="20150915092604"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -44,13 +44,9 @@
 			<artifact name="scalajs-dom_sjs0.6_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scalajs-dom_sjs0.6_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.11" rev="0.3.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.11" rev="0.2.8" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="upickle_sjs0.6_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="upickle_sjs0.6_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="com.lihaoyi" name="derive_sjs0.6_2.11" rev="0.3.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="derive_sjs0.6_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="derive_sjs0.6_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="com.github.japgolly.scalajs-react" name="core_sjs0.6_2.11" rev="0.8.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="core_sjs0.6_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>

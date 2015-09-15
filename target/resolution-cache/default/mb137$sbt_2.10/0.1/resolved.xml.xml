@@ -4,7 +4,7 @@
 		module="mb137$sbt_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20150823065817"
+		publication="20150915092556"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

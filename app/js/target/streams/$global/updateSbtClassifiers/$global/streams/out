@@ -1850,9 +1850,9 @@
 [debug] 	[NOT REQUIRED] com.google.inject#guice;3.0!guice.jar
 [debug] 	[NOT REQUIRED] org.sonatype.sisu.inject#cglib;2.2.1-v20090111!cglib.jar
 [debug] 	[NOT REQUIRED] asm#asm;3.1!asm.jar
-[debug] :: resolution report :: resolve 610ms :: artifacts dl 14ms
+[debug] :: resolution report :: resolve 669ms :: artifacts dl 26ms
 [debug] 	report for app#app$sbt_sjs0.6_2.11;0.1-SNAPSHOT default produced in /home/jarek/dev/lsa/mb137/app/js/target/resolution-cache/reports/app-app$sbt_sjs0.6_2.11-default.xml
-[debug] 	resolve done (610ms resolve - 14ms download)
+[debug] 	resolve done (669ms resolve - 26ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: app#app$sources_sjs0.6_2.11;0.1-SNAPSHOT
 [debug] 	confs: [default]
@@ -2695,6 +2695,6 @@
 [debug] 	[NOT REQUIRED] org.apache.ant#ant-launcher;1.9.3!ant-launcher.jar(src)
 [debug] 	[NOT REQUIRED] org.bouncycastle#bcpg-jdk15on;1.51!bcpg-jdk15on.jar(src)
 [debug] 	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.51!bcprov-jdk15on.jar(src)
-[debug] :: resolution report :: resolve 186ms :: artifacts dl 14ms
+[debug] :: resolution report :: resolve 210ms :: artifacts dl 26ms
 [debug] 	report for app#app$sources_sjs0.6_2.11;0.1-SNAPSHOT default produced in /home/jarek/dev/lsa/mb137/app/js/target/resolution-cache/reports/app-app$sources_sjs0.6_2.11-default.xml
-[debug] 	resolve done (186ms resolve - 14ms download)
+[debug] 	resolve done (210ms resolve - 26ms download)

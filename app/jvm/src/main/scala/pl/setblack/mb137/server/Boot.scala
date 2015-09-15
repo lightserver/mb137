@@ -16,6 +16,8 @@ object Boot extends App {
 
   val service = new Webservice
 
+  println( getClass.getClassLoader.toString)
+
   val binding = Http().bindAndHandle(service.route, interface, port)
   binding.onComplete {
     case Success(binding) ⇒

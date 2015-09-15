@@ -4,7 +4,7 @@
 		module="app_sjs0.6_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150823065827"
+		publication="20150915093132"
 	>
 		<description>
 		app
@@ -41,7 +41,7 @@
 		<dependency org="org.scala-js" name="scalajs-compiler_2.11.7" rev="0.6.4" conf="plugin->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-library_2.11" rev="0.6.4" conf="compile->default(compile)"/>
 		<dependency org="com.lihaoyi" name="scalatags_sjs0.6_2.11" rev="0.5.1" conf="compile->default(compile)"/>
-		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.11" rev="0.3.4" conf="compile->default(compile)"/>
+		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.11" rev="0.2.8" conf="compile->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-dom_sjs0.6_2.11" rev="0.8.0" conf="compile->default(compile)"/>
 		<dependency org="com.github.japgolly.scalajs-react" name="core_sjs0.6_2.11" rev="0.8.3" conf="compile->default(compile)"/>
 		<dependency org="com.github.japgolly.scalajs-react" name="extra_sjs0.6_2.11" rev="0.8.3" conf="compile->default(compile)"/>
