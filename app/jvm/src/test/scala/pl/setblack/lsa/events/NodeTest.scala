@@ -32,7 +32,7 @@ class NodeTest extends org.scalatest.FunSpec {
       val node1 = new Node(1)
       val history = new HistoryListener
       node1.registerMessageListener(history)
-      val testMessage = new Message[String](new Address(new Target(1), Seq()), new Event[String]("testik",1,0));
+      val testMessage = new NodeMessage(new Address(new Target(1), Seq()), new Event("testik",1,0));
       node1.receiveMessage(testMessage)
       assert( history.values(0) == "testik")
     }
@@ -109,7 +109,7 @@ class NodeTest extends org.scalatest.FunSpec {
 
 class HistoryListener extends MessageListener {
   var values = Seq[Any]()
-  override def onMessage[T](m: Message[T]): Unit = {
+  override def onMessage(m: NodeMessage): Unit = {
     values = values :+ m.event.content
   }
 }

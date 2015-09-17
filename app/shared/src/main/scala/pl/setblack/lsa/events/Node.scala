@@ -7,8 +7,9 @@ class Node(val id: Long) {
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var messageListeners: Seq[MessageListener] = Seq()
-
   private var loopConnection = registerConnection(id, new LoopInvocation(this))
+
+
 
   def registerMessageListener(listener: MessageListener): Unit = {
     messageListeners = messageListeners :+ listener
@@ -25,9 +26,9 @@ class Node(val id: Long) {
   /**
    * Dispatch event from this Node to ... other Node (or not).
    */
-  def sendEvent[T](t: T, adr: Address) = {
-    val event = new Event[T](t, 0, id)
-    val message = new Message[T](adr, event)
+  def sendEvent(content: String, adr: Address) = {
+    val event = new Event(content, 0, id)
+    val message = new NodeMessage(adr, event)
     getConnectionsForAddress(adr).foreach(nc => nc.send(message))
 
   }
@@ -36,6 +37,7 @@ class Node(val id: Long) {
     adr.target match {
       case Local => Seq(this.loopConnection)
       case All => this.connections.values.toSeq
+      case System => Seq()
       case Target(x) => this.connections.values.filter(node => node.knows(x)).toSeq
     }
   }
@@ -55,7 +57,7 @@ class Node(val id: Long) {
   /**
    * Node receives message here.
    */
-  private[events] def receiveMessage[T](msg: Message[T]) = {
+   def receiveMessage(msg: NodeMessage) = {
     messageListeners foreach (listener => listener.onMessage(msg))
     this.domains
       .filter( (v) => msg.destination.path.startsWith(v._1))

@@ -3,7 +3,7 @@ package pl.setblack.lsa.events
 class NodeConnection(
                        val targetId:Long,
                        val protocol:Protocol) {
-                          def send[T] ( msg:Message[T]): Unit = {
+                          def send ( msg:NodeMessage): Unit = {
                             protocol.send(msg)
                           }
 
@@ -11,3 +11,5 @@ class NodeConnection(
                             id == targetId
                           }
                         }
+
+

@@ -13,8 +13,10 @@ object Boot extends App {
   val config = system.settings.config
   val interface = config.getString("app.interface")
   val port = config.getInt("app.port")
-
+  val nodeId = config.getLong("app.node.id")
   val service = new Webservice
+
+
 
   println( getClass.getClassLoader.toString)
 

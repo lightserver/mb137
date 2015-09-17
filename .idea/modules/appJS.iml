@@ -22,7 +22,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="app-sources" exported="" />
     <orderEntry type="library" name="SBT: com.github.japgolly.fork.monocle:monocle-core_sjs0.6_2.11:1.1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.github.japgolly.fork.scalaz:scalaz-core_sjs0.6_2.11:7.1.1-2:jar" level="project" />
     <orderEntry type="library" name="SBT: com.github.japgolly.fork.scalaz:scalaz-effect_sjs0.6_2.11:7.1.1-2:jar" level="project" />
@@ -39,5 +38,6 @@
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.webjars:react:0.13.1:jar" level="project" />
     <orderEntry type="library" name="SBT: com.lihaoyi:upickle_sjs0.6_2.11:0.2.8:jar" level="project" />
+    <orderEntry type="module" module-name="app-sources" exported="" />
   </component>
 </module>

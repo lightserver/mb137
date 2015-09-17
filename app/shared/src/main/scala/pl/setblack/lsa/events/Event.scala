@@ -5,8 +5,8 @@ package pl.setblack.lsa.events
  *
  * Events  go to Domains.
  */
-class Event[T](
-                val content: T,
+case class Event(
+                val content: String,
                 val id: Long,
                 val sender: Long) {
 }
