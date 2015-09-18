@@ -2,6 +2,7 @@ package pl.setblack.lsa.events
 
 
 import upickle.default._
+
 /**
  * Node represents system to register domains and send pl.setblack.lsa.events.
  */
@@ -9,8 +10,7 @@ class Node(val id: Long) {
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var messageListeners: Seq[MessageListener] = Seq()
-  private var loopConnection = registerConnection(id, new LoopInvocation(this))
-
+  private val loopConnection = registerConnection(id, new LoopInvocation(this))
 
 
   def registerMessageListener(listener: MessageListener): Unit = {
@@ -26,17 +26,18 @@ class Node(val id: Long) {
   }
 
 
-  def sendEvent(content: String, domain : Seq[String]) :Unit= {
+  def sendEvent(content: String, domain: Seq[String]): Unit = {
     val adr = Address(All, domain)
+    println("sending eventto:" + adr.toString)
     sendEvent(content, adr)
   }
 
   /**
    * Dispatch event from this Node to ... other Node (or not).
    */
-  def sendEvent(content: String, adr: Address):Unit = {
+  def sendEvent(content: String, adr: Address): Unit = {
     val event = new Event(content, 0, id)
-    val message = new NodeMessage(adr, event)
+    val message = new NodeMessage(adr, event, Seq(this.id))
     getConnectionsForAddress(adr).foreach(nc => nc.send(message))
 
   }
@@ -50,8 +51,8 @@ class Node(val id: Long) {
     }
   }
 
-  def createClientIdMessage ( clientId : Long):NodeMessage = {
-    val event = new Event( write[ControlEvent](RegisteredClient(clientId, this.id)),1, this.id )
+  def createClientIdMessage(clientId: Long): NodeMessage = {
+    val event = new Event(write[ControlEvent](RegisteredClient(clientId, this.id)), 1, this.id)
     NodeMessage(Address(System), event)
   }
 
@@ -66,27 +67,55 @@ class Node(val id: Long) {
     this.connections
   }
 
+  def registerDomainListener[O](listener: DomainListener[O], path: Seq[String]): Unit = {
+    println("registering listener for:" + path.toString)
+    println("a domeny to:" + this.domains.keys.toString)
+    this.filterDomains(path).foreach(x => x match {
+      case d: Domain[O] => {
+        println("filtered domain:" + path)
+        d.registerListener(listener)
+      }
+    })
+  }
+
   def processSysMessage(ev: Event): Unit = {
     val ctrlEvent = read[ControlEvent](ev.content)
     ctrlEvent match {
-        //does not make any sense now...
-      case RegisteredClient(clientId, serverId ) => println("registered as: " + id)
+      //does not make any sense now...
+      case RegisteredClient(clientId, serverId) => println("registered as: " + id)
     }
+  }
+
+  private def reroute(msg: NodeMessage): Unit = {
+    val routedMsg = msg.copy(route = msg.route :+ this.id)
+    this.connections.values.filter(p => !routedMsg.route.contains(p.targetId))
+      .foreach(nc => {
+      println("rerouted by:" + this.id + " to: " + nc.targetId )
+      nc.send(routedMsg)
+    })
+  }
+
+
+  private def filterDomains(path: Seq[String]): Seq[Domain[_]] = {
+    this.domains
+      .filter((v) => path.startsWith(v._1)).values.toSeq
   }
 
   /**
    * Node receives message here.
    */
-   def receiveMessage(msg: NodeMessage) = {
-    messageListeners foreach (listener => listener.onMessage(msg))
+  def receiveMessage(msg: NodeMessage) = {
+    receiveMessageLocal(msg)
+    reroute(msg)
+  }
 
-    if ( msg.destination.target == System) {
+  def receiveMessageLocal(msg: NodeMessage) = {
+    messageListeners foreach (listener => listener.onMessage(msg))
+    if (msg.destination.target == System) {
       processSysMessage(msg.event)
     } else {
-
-      this.domains
-        .filter((v) => msg.destination.path.startsWith(v._1))
-        .foreach((v) => v._2.receiveEvent(msg.event))
+      println("message processed by domains")
+      filterDomains(msg.destination.path).foreach((v) => v.receiveEvent(msg.event))
     }
   }
 

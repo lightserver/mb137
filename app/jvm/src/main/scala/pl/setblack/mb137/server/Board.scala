@@ -36,8 +36,9 @@ object Board {
           case msg: ReceivedMessage    ⇒ {
             println("received from "+msg.sender)
             val nodeMessage = read[NodeMessageTransport](msg.message).toNodeMessage
-            println("converted"+nodeMessage)
-            server.receiveMessage(nodeMessage)
+            val routed = nodeMessage.copy( route = nodeMessage.route :+  nodeMessage.event.sender)
+            println("converted"+routed)
+            server.receiveMessage(routed)
 
             //dispatch(msg.toMessage)
           }

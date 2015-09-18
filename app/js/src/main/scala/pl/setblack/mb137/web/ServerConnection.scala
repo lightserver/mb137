@@ -21,7 +21,8 @@ class ServerConnection(val backend : BoardBackend)  {
       case RegisteredClient(id,serverId) => {
         println("registered once as: " + id)
 
-        system = new ClientBoardSystem ( id, connection, serverId)
+        system = new ClientBoardSystem ( id, connection, serverId, backend)
+        system.mainNode.registerDomainListener( backend, Seq("default"))
       }
     }
   }

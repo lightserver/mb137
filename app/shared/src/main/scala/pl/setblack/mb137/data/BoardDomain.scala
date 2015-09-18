@@ -12,8 +12,7 @@ class BoardDomain( topic :String) extends  Domain[BoardMutable](new BoardMutable
       boardEv match {
         case NewPost(msg, author) =>
           domainObject.append( BoardMessage(author, msg))
-
       }
-
+    println("listeners:" + listeners.toString)
   }
 }

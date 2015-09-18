@@ -10,7 +10,7 @@ package pl.setblack.lsa.events
 case class NodeMessage(
                   val destination: Address,
                   val event: Event,
-                  val route : Seq[Long] = Seq()) {
+                  val route : Seq[Long] = Seq[Long]()) {
 
   def toTransport = NodeMessageTransport(destination.toTransport, event, route)
 

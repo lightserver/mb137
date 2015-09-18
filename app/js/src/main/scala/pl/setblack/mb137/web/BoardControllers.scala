@@ -4,7 +4,9 @@ import japgolly.scalajs.react.vdom.prefix_<^._
 import org.scalajs.dom
 import org.scalajs.dom.document
 import org.scalajs.dom.raw._
-import pl.setblack.mb137.data.{BoardMessage, BoardState}
+import pl.setblack.lsa.events
+import pl.setblack.lsa.events.DomainListener
+import pl.setblack.mb137.data.{BoardMutable, BoardDomain, BoardMessage, BoardState}
 import upickle._
 import scalajs.concurrent.JSExecutionContext.Implicits.runNow
 import org.scalajs.dom.ext.Ajax
@@ -14,14 +16,17 @@ import japgolly.scalajs.react._
 import scala.scalajs.js.annotation.JSExport
 
 
-class BoardBackend($: BackendScope[Unit, BoardState]) {
+class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[BoardMutable] {
   val connection = new ServerConnection(this)
 
 
+  override def onDomainChanged(domainObj: BoardMutable, ev: events.Event): Unit =  {
+    println("domain has changed")
+    $.modState(_.copy(messages = domainObj.messages))
+  }
 
   def onChange(e: ReactEventI) = {
   //  textEntered = e.target.value
-    println("jebiem:"+e.target.value )
     $.modState(_.copy(inputText = e.target.value))
   }
 
@@ -30,13 +35,14 @@ class BoardBackend($: BackendScope[Unit, BoardState]) {
     e.preventDefault()
 
     $.modState(s => {
-      val newMessage = BoardMessage("ireeg", s.inputText)
-      connection.system.enterMessage("blas")
-
-
-      s.copy( messages = s.messages :+ newMessage)
+      //val newMessage = BoardMessage("ireeg", s.inputText)
+      connection.system.enterMessage(s.inputText)
+      //s.copy( messages = s.messages :+ newMessage)
+      s
     })
   }
+
+
 
   def newMessage(b : BoardMessage): Unit = {
     $.modState(s => {
