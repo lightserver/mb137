@@ -17,22 +17,30 @@ import scala.scalajs.js.annotation.JSExport
 class BoardBackend($: BackendScope[Unit, BoardState]) {
   val connection = new ServerConnection(this)
 
-  def onChange(e: ReactEventI) =
-    $.modState(_.copy(subject = e.target.value))
+
+
+  def onChange(e: ReactEventI) = {
+  //  textEntered = e.target.value
+    println("jebiem:"+e.target.value )
+    $.modState(_.copy(inputText = e.target.value))
+  }
+
 
   def handleSubmit(e: ReactEventI) = {
     e.preventDefault()
 
     $.modState(s => {
-      val newMessage = BoardMessage("ireeg", s.subject)
-      connection.sendBoardMessage( newMessage)
-      BoardState(s.messages :+ newMessage, "")
+      val newMessage = BoardMessage("ireeg", s.inputText)
+      connection.system.enterMessage("blas")
+
+
+      s.copy( messages = s.messages :+ newMessage)
     })
   }
 
   def newMessage(b : BoardMessage): Unit = {
     $.modState(s => {
-      BoardState(s.messages :+ b, "")
+      BoardState(s.messages :+ b, "","")
     })
   }
 }
@@ -56,14 +64,14 @@ object BoardControllers {
       BoardMessage("irreeg", "aaa"))
 
     val BoardApp = ReactComponentB[Unit]("TodoApp")
-      .initialState(BoardState(toDisp, ""))
+      .initialState(BoardState(toDisp, "", ""))
       .backend(new BoardBackend(_))
       .render((_, S, B) =>
       <.div(
         <.h3("TODO"),
         TopicBoard(S.messages),
         <.form(^.onSubmit ==> B.handleSubmit,
-          <.input(^.onChange ==> B.onChange, ^.value := S.subject),
+          <.input(^.onChange ==> B.onChange, ^.value := S.inputText),
           <.button("Add #", S.messages.length + 1)
         )
       )

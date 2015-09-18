@@ -1,6 +1,8 @@
 package pl.setblack.mb137.data
 
 import pl.setblack.lsa.events.Node
+import upickle._
+
 
 abstract class BoardSystem {
   val mainNode = createMainNode()
@@ -8,6 +10,12 @@ abstract class BoardSystem {
 
 
    def createMainNode():Node
+
+
+  def enterMessage( txt: String) = {
+    val newPost = NewPost(txt, "irek71")
+    mainNode.sendEvent(BoardEvent.writeBoardEvent(newPost) ,Seq("default"))
+  }
 }
 
 

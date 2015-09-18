@@ -20,7 +20,7 @@ val app = crossProject.settings(
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "scalatags" % "0.5.1",
     //"com.lihaoyi" %%% "utest" % "0.3.0",
-    "com.lihaoyi" %%% "upickle" % "0.2.8"
+    "com.lihaoyi" %%% "upickle" % "0.3.6"
 
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
@@ -61,6 +61,11 @@ lazy val appJVM = app.jvm.settings(
   // JS files like app-fastopt.js and app-jsdeps.js need to be copied to the server
   (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
      outDir
+  }) .data,
+  (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
+    println("mapuje : " + outDir.toString)
+    val mapping =  new File( outDir.getAbsolutePath + ".map")
+    mapping
   }) .data,
   (resources in Compile) += (packageJSDependencies in (appJS, Compile)).value,
   (resources in Compile) += (packageScalaJSLauncher in (appJS, Compile)).value.data,

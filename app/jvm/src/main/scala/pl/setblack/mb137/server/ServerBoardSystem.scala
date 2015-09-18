@@ -16,7 +16,9 @@ class ServerBoardSystem(nodeId: Long)  extends BoardSystem{
   }
 
   override def createMainNode ():Node = {
-    new Node(nodeId)
+    val node = new Node(nodeId)
+
+    node
   }
 
   def receiveMessage( msg : NodeMessage): Unit = {
@@ -24,7 +26,9 @@ class ServerBoardSystem(nodeId: Long)  extends BoardSystem{
   }
 
   def registerConnection( subscriber : ActorRef, clientId: Long ) = {
-    mainNode.registerConnection(clientId, new ServerWSProtocol(subscriber))
+    val connection = mainNode.registerConnection(clientId, new ServerWSProtocol(subscriber))
+    val controlMessage = mainNode.createClientIdMessage(clientId)
+    connection.send(controlMessage)
   }
 }
 

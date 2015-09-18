@@ -8,7 +8,7 @@ import pl.setblack.lsa.events.Address
 import pl.setblack.lsa.events._
 
 
-import upickle._
+import upickle.default._
 
 
 trait Board {
@@ -29,8 +29,9 @@ object Board {
             context.watch(subscriber)
             subscribers += subscriber
             println(s"${name} joined")
-            subscriber ! NodeMessage( Address(System), Event( "test msg", 0,0))
-            server.registerConnection( subscriber, 1)
+          //  subscriber ! NodeMessage( Address(System), Event( "test msg", 0,0))
+            val clientId = server.nextClientNode
+            server.registerConnection( subscriber, clientId)
 
           case msg: ReceivedMessage    ⇒ {
             println("received from "+msg.sender)

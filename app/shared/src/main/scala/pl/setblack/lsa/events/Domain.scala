@@ -1,7 +1,7 @@
 package pl.setblack.lsa.events
 
 
-abstract class Domain[O](val domainObject:O) {
+abstract class Domain[O](var domainObject:O) {
    var recentEvents  = Map[Long,Seq[Long]]()
 
     def receiveEvent (event :Event) = {

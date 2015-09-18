@@ -37,7 +37,8 @@
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.webjars:react:0.13.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_sjs0.6_2.11:0.2.8:jar" level="project" />
     <orderEntry type="module" module-name="app-sources" exported="" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:derive_sjs0.6_2.11:0.3.6:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_sjs0.6_2.11:0.3.6:jar" level="project" />
   </component>
 </module>

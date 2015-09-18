@@ -16,7 +16,7 @@ import akka.http.scaladsl.server.Directives
 import akka.stream.Materializer
 import akka.stream.scaladsl.Flow
 
-import upickle._
+import upickle.default._
 
 class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directives {
 
@@ -69,6 +69,7 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
 
       override def onUpstreamFailure(cause: Throwable, ctx: Context[T]): TerminationDirective = {
         println(s"WS stream failed with $cause")
+        cause.printStackTrace()
         super.onUpstreamFailure(cause, ctx)
       }
     })

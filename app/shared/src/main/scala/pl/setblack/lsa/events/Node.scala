@@ -1,5 +1,7 @@
 package pl.setblack.lsa.events
 
+
+import upickle.default._
 /**
  * Node represents system to register domains and send pl.setblack.lsa.events.
  */
@@ -23,10 +25,16 @@ class Node(val id: Long) {
     domains contains (path)
   }
 
+
+  def sendEvent(content: String, domain : Seq[String]) :Unit= {
+    val adr = Address(All, domain)
+    sendEvent(content, adr)
+  }
+
   /**
    * Dispatch event from this Node to ... other Node (or not).
    */
-  def sendEvent(content: String, adr: Address) = {
+  def sendEvent(content: String, adr: Address):Unit = {
     val event = new Event(content, 0, id)
     val message = new NodeMessage(adr, event)
     getConnectionsForAddress(adr).foreach(nc => nc.send(message))
@@ -42,10 +50,15 @@ class Node(val id: Long) {
     }
   }
 
+  def createClientIdMessage ( clientId : Long):NodeMessage = {
+    val event = new Event( write[ControlEvent](RegisteredClient(clientId, this.id)),1, this.id )
+    NodeMessage(Address(System), event)
+  }
 
   def registerConnection(id: Long, protocol: Protocol) = {
     val connection = new NodeConnection(id, protocol)
     this.connections = this.connections + (id -> connection)
+
     connection
   }
 
@@ -53,15 +66,28 @@ class Node(val id: Long) {
     this.connections
   }
 
+  def processSysMessage(ev: Event): Unit = {
+    val ctrlEvent = read[ControlEvent](ev.content)
+    ctrlEvent match {
+        //does not make any sense now...
+      case RegisteredClient(clientId, serverId ) => println("registered as: " + id)
+    }
+  }
 
   /**
    * Node receives message here.
    */
    def receiveMessage(msg: NodeMessage) = {
     messageListeners foreach (listener => listener.onMessage(msg))
-    this.domains
-      .filter( (v) => msg.destination.path.startsWith(v._1))
-      .foreach( (v) => v._2.receiveEvent(msg.event))
+
+    if ( msg.destination.target == System) {
+      processSysMessage(msg.event)
+    } else {
+
+      this.domains
+        .filter((v) => msg.destination.path.startsWith(v._1))
+        .foreach((v) => v._2.receiveEvent(msg.event))
+    }
   }
 
   /**
