@@ -1,11 +1,9 @@
 package pl.setblack.mb137.web
 
 import japgolly.scalajs.react.vdom.prefix_<^._
-import org.scalajs.dom
+
 import org.scalajs.dom.document
-import org.scalajs.dom.raw._
-import pl.setblack.lsa.events
-import pl.setblack.lsa.events.DomainListener
+import pl.setblack.lsa.events.{Event, DomainListener}
 import pl.setblack.mb137.data.{BoardMutable, BoardDomain, BoardMessage, BoardState}
 import upickle._
 import scalajs.concurrent.JSExecutionContext.Implicits.runNow
@@ -20,7 +18,7 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
   val connection = new ServerConnection(this)
 
 
-  override def onDomainChanged(domainObj: BoardMutable, ev: events.Event): Unit =  {
+  override def onDomainChanged(domainObj: BoardMutable, ev: Event): Unit =  {
     println("domain has changed")
     $.modState(_.copy(messages = domainObj.messages))
   }
@@ -37,7 +35,20 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
     $.modState(s => {
       //val newMessage = BoardMessage("ireeg", s.inputText)
       connection.system.enterMessage(s.inputText)
+      connection.system.save()
       //s.copy( messages = s.messages :+ newMessage)
+      s
+    })
+  }
+
+  def handleLoad(e: ReactEventI) = {
+    e.preventDefault()
+
+    $.modState(s => {
+      //val newMessage = BoardMessage("ireeg", s.inputText)
+      connection.system.load()
+      //s.copy( messages = s.messages :+ newMessage)
+      println("loaded")
       s
     })
   }
@@ -78,7 +89,8 @@ object BoardControllers {
         TopicBoard(S.messages),
         <.form(^.onSubmit ==> B.handleSubmit,
           <.input(^.onChange ==> B.onChange, ^.value := S.inputText),
-          <.button("Add #", S.messages.length + 1)
+          <.button("Add #", S.messages.length + 1),
+          <.button(^.onClick ==> B.handleLoad)("Load")
         )
       )
       ).buildU

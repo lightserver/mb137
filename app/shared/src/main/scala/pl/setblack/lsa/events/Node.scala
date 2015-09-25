@@ -1,17 +1,35 @@
 package pl.setblack.lsa.events
 
 
+import pl.setblack.lsa.io.Storage
 import upickle.default._
+
+import scala.collection.mutable.ArrayBuffer
 
 /**
  * Node represents system to register domains and send pl.setblack.lsa.events.
  */
 class Node(val id: Long) {
+
+
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var messageListeners: Seq[MessageListener] = Seq()
   private val loopConnection = registerConnection(id, new LoopInvocation(this))
 
+
+  def saveDomains(storage: Storage)  = {
+
+    this.domains.foreach( kv => storage.save(write[ArrayBuffer[Event]](kv._2.eventsHistory), Seq("start") ++ kv._1 ))
+  }
+
+  def loadDomains(storage: Storage) = {
+    this.domains.foreach(
+      kv => kv._2.restoreDomain(
+                read[ArrayBuffer[Event]](
+                  storage.load(Seq("start") ++ kv._1 ).getOrElse("") )))
+
+  }
 
   def registerMessageListener(listener: MessageListener): Unit = {
     messageListeners = messageListeners :+ listener
