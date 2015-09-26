@@ -36,8 +36,7 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
       //val newMessage = BoardMessage("ireeg", s.inputText)
       connection.system.enterMessage(s.inputText)
       connection.system.save()
-      //s.copy( messages = s.messages :+ newMessage)
-      s
+      s.copy( messages = connection.system.getBoardMutable().messages)
     })
   }
 
@@ -49,7 +48,7 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
       connection.system.load()
       //s.copy( messages = s.messages :+ newMessage)
       println("loaded")
-      s
+      s.copy( messages = connection.system.getBoardMutable().messages)
     })
   }
 

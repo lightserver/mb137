@@ -12,6 +12,7 @@ import scala.collection.mutable.ArrayBuffer
 class Node(val id: Long) {
 
 
+
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var messageListeners: Seq[MessageListener] = Seq()
@@ -27,7 +28,7 @@ class Node(val id: Long) {
     this.domains.foreach(
       kv => kv._2.restoreDomain(
                 read[ArrayBuffer[Event]](
-                  storage.load(Seq("start") ++ kv._1 ).getOrElse("") )))
+                  storage.load(Seq("start") ++ kv._1 ).getOrElse("[]") )))
 
   }
 
@@ -149,4 +150,7 @@ class Node(val id: Long) {
     this.loopConnection
   }
 
+  def getDomainObject(path: Seq[String]) =  {
+      domains.get(path).get.domainObject
+  }
 }

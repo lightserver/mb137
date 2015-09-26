@@ -1,6 +1,6 @@
 package pl.setblack.mb137.web
 
-import pl.setblack.lsa.io.WebStorage
+import pl.setblack.lsa.io.{Storage, WebStorage}
 import org.scalajs.dom.raw.{MessageEvent, WebSocket}
 import pl.setblack.lsa.events.{DomainListener, NodeMessageTransport, Node}
 import pl.setblack.mb137.data.BoardSystem
@@ -15,7 +15,9 @@ class ClientBoardSystem(
 
 
 
-  val webStorage = new WebStorage()
+  override def createStorage(): Storage = {
+    new WebStorage()
+  }
 
   override def createMainNode ():Node = {
     val node = new Node(nodeId)
@@ -29,11 +31,5 @@ class ClientBoardSystem(
     node
   }
 
-  def save() = {
-    this.mainNode.saveDomains( webStorage)
-  }
 
-  def load() = {
-    this.mainNode.loadDomains( webStorage)
-  }
 }
