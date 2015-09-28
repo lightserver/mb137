@@ -7,15 +7,25 @@ abstract class Domain[O](var domainObject: O) {
   var recentEvents = Map[Long, Seq[Long]]()
   var listeners = Seq[DomainListener[O]]()
 
-  val eventsHistory  = scala.collection.mutable.ArrayBuffer.empty[Event]
+  val eventsHistory = scala.collection.mutable.ArrayBuffer.empty[Event]
+
+  def seenEvent(event: Event ) : Boolean = {
+    recentEvents.get(event.sender).getOrElse(Seq()).contains( event.id)
+  }
+
 
   def receiveEvent(event: Event) = {
-    recentEvents = recentEvents + (event.sender -> (
-      recentEvents.getOrElse(event.sender, Seq()) :+ event.id))
-    eventsHistory += event
-    processDomain(event)
-    listeners.foreach(l => l.onDomainChanged(domainObject, event))
-    //dom.localStorage.setItem("recent_events", write(recentEvents))
+    if (!seenEvent(event)) {
+       println("received event : " + event.id +" from : " + event.sender )
+      recentEvents = recentEvents + (event.sender -> (
+        recentEvents.getOrElse(event.sender, Seq()) :+ event.id))
+      println ("contains:" + seenEvent(event))
+      eventsHistory += event
+      processDomain(event)
+      listeners.foreach(l => l.onDomainChanged(domainObject, event))
+    }
+
+
   }
 
   def registerListener(listener: DomainListener[O]): Unit = {
@@ -23,12 +33,12 @@ abstract class Domain[O](var domainObject: O) {
     listeners = listeners :+ listener
   }
 
-  def restoreDomain(events : Seq[Event]): Unit = {
-      events.foreach( e => processDomain(e))
+  def restoreDomain(events: Seq[Event]): Unit = {
+    println("events is : " +events )
+    events.foreach(e => receiveEvent(e))
   }
 
   def processDomain(event: Event)
-
 
 
 }

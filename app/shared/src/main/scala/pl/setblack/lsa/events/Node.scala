@@ -10,21 +10,19 @@ import scala.collection.mutable.ArrayBuffer
  * Node represents system to register domains and send pl.setblack.lsa.events.
  */
 class Node(val id: Long) {
-
-
-
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var messageListeners: Seq[MessageListener] = Seq()
   private val loopConnection = registerConnection(id, new LoopInvocation(this))
 
+  private var nextEventId:Long = 0
 
   def saveDomains(storage: Storage)  = {
-
     this.domains.foreach( kv => storage.save(write[ArrayBuffer[Event]](kv._2.eventsHistory), Seq("start") ++ kv._1 ))
   }
 
   def loadDomains(storage: Storage) = {
+
     this.domains.foreach(
       kv => kv._2.restoreDomain(
                 read[ArrayBuffer[Event]](
@@ -55,7 +53,7 @@ class Node(val id: Long) {
    * Dispatch event from this Node to ... other Node (or not).
    */
   def sendEvent(content: String, adr: Address): Unit = {
-    val event = new Event(content, 0, id)
+    val event = new Event(content, getNextEventId(), id)
     val message = new NodeMessage(adr, event, Seq(this.id))
     getConnectionsForAddress(adr).foreach(nc => nc.send(message))
 
@@ -152,5 +150,10 @@ class Node(val id: Long) {
 
   def getDomainObject(path: Seq[String]) =  {
       domains.get(path).get.domainObject
+  }
+
+  def getNextEventId () : Long = {
+    this.nextEventId += 1
+    this.nextEventId
   }
 }

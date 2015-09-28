@@ -13,7 +13,13 @@ class WebStorage extends Storage {
   }
 
   override def load(path: Seq[String]): Option[String] = {
-    Some(dom.localStorage.getItem(path.toString()))
+
+    dom.localStorage.getItem(path.toString()) match {
+      case null => println ("nonik")
+          None
+      case x => println("sonik"  + x)
+          Some(x)
+    }
   }
 }
 
