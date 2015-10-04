@@ -6,7 +6,7 @@ import java.nio.file.{StandardOpenOption, OpenOption, Files, Paths}
 
 import upickle.default._
 
-class FileStore extends Storage {
+class FileStore(val diskPath: String) extends Storage {
   override def save(value: String, path: Seq[String]): Unit = {
     val fsPath = createPath(path)
     if (!Files.exists(fsPath.getParent)) {
@@ -33,11 +33,8 @@ class FileStore extends Storage {
   }
 
   def createPath(path: Seq[String]) = {
-    Paths.get("fileStore", path: _*)
+    Paths.get(diskPath, path: _*)
   }
 }
 
 
-class SysStorage extends FileStore {
-
-}

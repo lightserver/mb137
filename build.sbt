@@ -41,6 +41,7 @@ val app = crossProject.settings(
       "io.spray" %% "spray-can" % "1.3.2",
       "io.spray" %% "spray-routing" % "1.3.2",
       "com.typesafe.akka" %% "akka-actor" % "2.3.6",
+      "com.typesafe.akka" %% "akka-remote" % "2.3.6",
       "org.scalaz" %% "scalaz-core" % "7.1.2",
       "com.typesafe.akka" %% "akka-http-experimental" % "1.0",
       "org.scalatest" %% "scalatest" % "2.2.1" % "test"
@@ -59,16 +60,16 @@ lazy val appJVM = app.jvm.settings(
   version := "0.31",
 
   // JS files like app-fastopt.js and app-jsdeps.js need to be copied to the server
-  (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
+ /* (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
      outDir
   }) .data,
   (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
     println("mapuje : " + outDir.toString)
     val mapping =  new File( outDir.getAbsolutePath + ".map")
     mapping
-  }) .data,
-  (resources in Compile) += (packageJSDependencies in (appJS, Compile)).value,
-  (resources in Compile) += (packageScalaJSLauncher in (appJS, Compile)).value.data,
+  }) .data,*/
+  /*(resources in Compile) += (packageJSDependencies in (appJS, Compile)).value,
+  (resources in Compile) += (packageScalaJSLauncher in (appJS, Compile)).value.data,*/
 
   // copy resources like quiz.css to the server
   resourceDirectory in Compile <<= baseDirectory(_ / "../shared/src/main/resources"),
@@ -96,9 +97,6 @@ lazy val appJVM = app.jvm.settings(
     IO.copy(mappings, true)
     mappings.map(_._2)
   }
-
-
-
 
 
 ).enablePlugins(JavaAppPackaging)

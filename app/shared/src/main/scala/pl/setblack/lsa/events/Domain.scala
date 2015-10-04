@@ -6,8 +6,6 @@ import upickle.default._
 import scala.collection.mutable.ArrayBuffer
 
 abstract class Domain[O](var domainObject: O, val path: Seq[String]) {
-
-
   var recentEvents = Map[Long, Seq[Long]]()
   var listeners = Seq[DomainListener[O]]()
   val eventsHistory = scala.collection.mutable.ArrayBuffer.empty[Event]
