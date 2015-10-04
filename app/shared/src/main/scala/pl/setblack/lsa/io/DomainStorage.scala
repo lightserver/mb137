@@ -33,16 +33,17 @@ class DomainStorage(val path: Seq[String], val sysStorage : Storage) {
    }
  }
 
-  def loadEvents(domain: Domain[_]) = {
-    sysStorage.load(getSummaryPath()).foreach (
+  def loadEvents(domain: Domain[_]):Long = {
+    sysStorage.load(getSummaryPath()).map (
       storedNumber => {
         val maxEvent = storedNumber.toInt
         for(  i  <- 0 to maxEvent ){
             loadEvent(i).foreach( e => domain.receiveEvent(e))
         }
         saveCounter = maxEvent
+        saveCounter
       }
-    )
+    ).max
   }
 
   private def getStorePath(cnt :Integer) = {

@@ -14,7 +14,8 @@ object Boot extends App {
   val interface = config.getString("app.interface")
   val port = config.getInt("app.port")
   val nodeId = config.getLong("app.node.id")
-  val service = new Webservice
+
+  val service = new Webservice()
 
 
 

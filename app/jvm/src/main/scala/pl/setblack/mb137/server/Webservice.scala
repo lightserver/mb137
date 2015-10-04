@@ -20,8 +20,11 @@ import upickle.default._
 
 class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directives {
 
-  val serverNode = new ServerBoardSystem(1)
+  val serverNode = new ServerBoardSystem(system.settings.config.getLong("app.node.id"))
   val theBoard = Board.create(system, serverNode)
+
+
+
 
 
 
@@ -58,8 +61,8 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
         TextMessage.Strict(write(msg.toTransport))
       }
       case _ => {
-        println("jezde")
-        TextMessage.Strict(write("no witam pana"))
+
+        TextMessage.Strict(write("unknown message encountered"))
       }
     }.via(reportErrorsFlow)
 

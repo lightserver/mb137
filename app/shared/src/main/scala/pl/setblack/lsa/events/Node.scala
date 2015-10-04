@@ -13,6 +13,7 @@ import scala.collection.mutable.ArrayBuffer
 class Node(val id: Long)( implicit val storage :Storage) {
 
 
+
   private var connections: Map[Long, NodeConnection] = Map()
   private var domains: Map[Seq[String], Domain[_]] = Map()
   private var domainStorages : Map[Seq[String], DomainStorage] = Map()
@@ -32,7 +33,10 @@ class Node(val id: Long)( implicit val storage :Storage) {
   def loadDomains() = {
     this.domains.foreach(
       kv => this.domainStorages.get( kv._1).foreach(
-        ds => ds.loadEvents( kv._2)
+        ds => {
+            this.nextEventId += ds.loadEvents( kv._2)
+           println (s"-----next event id is:" + this.nextEventId)
+        }
       )
     )
   }
@@ -87,6 +91,9 @@ class Node(val id: Long)( implicit val storage :Storage) {
 
 
 
+
+
+
   def registerConnection(id: Long, protocol: Protocol) = {
     val connection = new NodeConnection(id, protocol)
     this.connections = this.connections + (id -> connection)
@@ -112,8 +119,14 @@ class Node(val id: Long)( implicit val storage :Storage) {
   private def resyncDomain(sync: ResyncDomain): Unit = {
     val address = Address(Target(sync.clientId), sync.domain)
 
-    this.filterDomains(sync.domain).map( domain => domain.resendEvents(sync.clientId, sync.recentEvents) )
-      .flatten.foreach( ev => sendEvent( ev, address))
+    this.filterDomains(sync.domain).map( domain => {
+      domain.resendEvents(sync.clientId, sync.recentEvents).foreach( ev => sendEvent( ev, address))
+      if ( sync.syncBack ) {
+        val event = Event(write[ControlEvent](ResyncDomain(this.id, sync.domain,  domain.recentEvents, false)),0,this.id)
+        val msg =  new NodeMessage(Address(System, sync.domain), event, Seq(this.id))
+        this.getConnectionsForAddress(address).foreach( nc => nc.send(msg))
+      }
+    } )
   }
 
   def processSysMessage(ev: Event): Unit = {
@@ -192,13 +205,12 @@ class Node(val id: Long)( implicit val storage :Storage) {
 
   def resync() = {
     this.domains.foreach(
-      kv =>  syncDomain(kv._1,kv._2))
+      kv =>  syncDomain(kv._1,kv._2, true))
   }
 
 
-  private def syncDomain(path: Seq[String], domain: Domain[_]) ={
-      val event = Event(write[ControlEvent](ResyncDomain(this.id, path, domain.recentEvents)),0,this.id)
-
+  private def syncDomain(path: Seq[String], domain: Domain[_], syncBack : Boolean) ={
+      val event = Event(write[ControlEvent](ResyncDomain(this.id, path,  domain.recentEvents, syncBack)),0,this.id)
       val adr = Address(System, path)
     println("sending event:"+ event)
        this.sendEvent(event,adr)
