@@ -2,7 +2,7 @@ package pl.setblack.mb137.web
 
 import org.scalajs.dom
 import org.scalajs.dom.raw.{WebSocket, Document}
-import pl.setblack.lsa.events.{Event, RegisteredClient, ControlEvent, NodeMessageTransport}
+import pl.setblack.lsa.events._
 import pl.setblack.mb137.data.BoardMessage
 import upickle.default._
 
@@ -15,15 +15,19 @@ class ServerConnection(val backend : BoardBackend)  {
   }
 
   private def processSysMessage(ev : Event, connection : WebSocket): Unit = {
+
     val ctrlEvent = ControlEvent.parseControlEvent(ev.content)
     ctrlEvent match {
-      //does not make any sense now...
       case RegisteredClient(id,serverId) => {
         println("registered once as: " + id)
 
-        system = new ClientBoardSystem ( id, connection, serverId, backend)
-        system.mainNode.registerDomainListener( backend, Seq("default"))
+        system = new ClientBoardSystem(id, connection, serverId, backend)
+        system.mainNode.registerDomainListener(backend, Seq("default"))
+        backend.init()
       }
+      case x =>
+        system.mainNode.processSysMessage(ev)
+
     }
   }
 
@@ -44,17 +48,15 @@ class ServerConnection(val backend : BoardBackend)  {
          case pl.setblack.lsa.events.System => processSysMessage(msg.event, connection)
          case x => println("nic nie kumam")
        }
-
       // backend.newMessage(msg)
     }
     connection.onclose = { (event: org.scalajs.dom.raw.Event) ⇒
-
     }
     connection
   }
+
   private def getWebsocketUri(document: Document, nameOfChatParticipant: String): String = {
     val wsProtocol = if (dom.document.location.protocol == "https:") "wss" else "ws"
-
-    s"$wsProtocol://${dom.document.location.host}/board?name=$nameOfChatParticipant"
+  s"$wsProtocol://${dom.document.location.host}/services/board?name=$nameOfChatParticipant"
   }
 }

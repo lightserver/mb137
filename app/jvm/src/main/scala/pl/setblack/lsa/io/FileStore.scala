@@ -2,17 +2,17 @@ package pl.setblack.lsa.io
 
 import java.io.{ObjectInputStream, ObjectOutputStream}
 import java.nio.charset.StandardCharsets
-import java.nio.file.{Files, Paths}
+import java.nio.file.{StandardOpenOption, OpenOption, Files, Paths}
 
 import upickle.default._
 
 class FileStore extends Storage {
   override def save(value: String, path: Seq[String]): Unit = {
     val fsPath = createPath(path)
-    if (Files.exists(fsPath)) {
-      Files.createDirectories(fsPath)
+    if (!Files.exists(fsPath.getParent)) {
+      Files.createDirectories(fsPath.getParent)
     }
-    val output = Files.newBufferedWriter(fsPath)
+    val output = Files.newBufferedWriter(fsPath, StandardOpenOption.CREATE )
     output.write(value)
     output.close()
 
@@ -24,6 +24,7 @@ class FileStore extends Storage {
       val input = Files.newBufferedReader(fsPath)
       val line = input.readLine()
       input.close()
+      println("I have read:"+ line)
       Some(line)
     } else {
       None

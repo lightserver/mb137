@@ -77,9 +77,28 @@ lazy val appJVM = app.jvm.settings(
  // that was a problem: unmanagedSourceDirectories in Compile <+= baseDirectory(_ / "../shared/src/main/scala"),
 
   // application.conf too must be in the classpath
-  unmanagedResourceDirectories in Compile <+= baseDirectory(_ / "../jvm/src/main/resources")
+  // application.conf too must be in the classpath
+  unmanagedResourceDirectories in Compile <+= baseDirectory(_ / "../jvm/src/main/resources"),
+  /*(unmanagedResourceDirectories in Compile) += baseDirectory(_ / "../../web/.tmp" ).value.map(
+  { outDir: File =>
+    println("mapujex : " + outDir.toString)
+    val mapping =  new File( outDir.getAbsolutePath + ".map")
+    mapping
+  }
+  ),*/
+  resourceGenerators in Compile <+= Def.task {
+    val log = streams.value.log
+    //log.info(s"APP: ${((classDirectory in Compile).value / "material-ui-app.html").getCanonicalPath}")
+    val mui = baseDirectory(_ / "../../web/.tmp" ).value
+    val muiFiles = (mui ** ("*.js" || "*.css" || "*.eot" || "*.svg" || "*.svg" || "*.ttf" || "*.woff" || "*.html")).filter(_.isFile).get
+    import Path.rebase
+    val mappings = muiFiles pair rebase(Seq(mui), (resourceManaged in Compile).value / "web")
+    IO.copy(mappings, true)
+    mappings.map(_._2)
+  }
 
-  // include the libanius core JAR
-  //removed jarek:unmanagedBase <<= baseDirectory(_ / "../shared/lib")
+
+
+
 
 ).enablePlugins(JavaAppPackaging)

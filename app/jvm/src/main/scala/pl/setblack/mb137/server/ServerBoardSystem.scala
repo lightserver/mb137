@@ -21,7 +21,7 @@ class ServerBoardSystem(nodeId: Long)  extends BoardSystem{
   }
 
   override def createMainNode ():Node = {
-    val node = new Node(nodeId)
+    val node = new Node(nodeId)(storage)
 
     node
   }

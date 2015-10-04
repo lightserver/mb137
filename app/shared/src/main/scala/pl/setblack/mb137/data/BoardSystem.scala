@@ -6,11 +6,13 @@ import upickle._
 
 
 abstract class BoardSystem {
+  val  storage = createStorage()
   val mainNode = createMainNode()
-  val storage = createStorage()
-  mainNode.registerDomain(Seq("default"), new BoardDomain("default"))
+
+  mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
 
   load()
+  resync()
 
    def createMainNode():Node
 
@@ -27,11 +29,16 @@ abstract class BoardSystem {
   }
 
   def save() = {
-    this.mainNode.saveDomains(storage)
+    //this.mainNode.saveDomains(storage)
   }
 
   def load() = {
-    this.mainNode.loadDomains(storage)
+    this.mainNode.loadDomains()
+  }
+
+  def resync() = {
+    println("resync...")
+    this.mainNode.resync()
   }
 }
 

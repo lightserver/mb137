@@ -35,7 +35,6 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
     $.modState(s => {
       //val newMessage = BoardMessage("ireeg", s.inputText)
       connection.system.enterMessage(s.inputText)
-      connection.system.save()
       s.copy( messages = connection.system.getBoardMutable().messages)
     })
   }
@@ -52,7 +51,11 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
     })
   }
 
-
+  def init(): Unit = {
+    $.modState(s => {
+      s.copy( messages = connection.system.getBoardMutable().messages)
+    })
+  }
 
   def newMessage(b : BoardMessage): Unit = {
     $.modState(s => {

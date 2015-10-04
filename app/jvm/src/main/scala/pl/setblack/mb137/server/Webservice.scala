@@ -13,7 +13,7 @@ import pl.setblack.mb137.data.BoardMessage
 import scala.concurrent.duration._
 
 import akka.http.scaladsl.server.Directives
-import akka.stream.Materializer
+import akka.stream.{OverflowStrategy, Materializer}
 import akka.stream.scaladsl.Flow
 
 import upickle.default._
@@ -33,10 +33,12 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
         // Scala-JS puts them in the root of the resource directory per default,
         // so that's where we pick them up
         pathPrefix("scjs")(getFromResourceDirectory("")) ~
-        path("board") {
-          parameter('name) { name ⇒
-            handleWebsocketMessages(websocketMessagesFlow(sender = name))
-          } ~ {
+        pathPrefix( "services" ) {
+          path("board") {
+            parameter('name) { name ⇒
+              handleWebsocketMessages(websocketMessagesFlow(sender = name))
+            }
+        } ~ {
             complete {
               "ok normalnie"
             }
@@ -60,6 +62,8 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
         TextMessage.Strict(write("no witam pana"))
       }
     }.via(reportErrorsFlow)
+
+
 
 
   def reportErrorsFlow[T]: Flow[T, T, Unit] =

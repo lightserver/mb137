@@ -1,10 +1,11 @@
 package pl.setblack.mb137.data
 
 import pl.setblack.lsa.events.{Event, Domain}
+import pl.setblack.lsa.io.Storage
 
 import upickle.default._
 
-class BoardDomain( topic :String) extends  Domain[BoardMutable](new BoardMutable("default")){
+class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutable](new BoardMutable("default"), path){
   override def processDomain(event: Event): Unit = {
       println("processing board event")
       val boardEv = BoardEvent.readBoardEvent(event.content)

@@ -3,10 +3,11 @@ package pl.setblack.lsa.events
 
 import upickle.default._
 sealed trait ControlEvent {
-
 }
 
 case class RegisteredClient(val clientId :Long, val senderNodeId:Long) extends ControlEvent
+case class ResyncDomain( val clientId:Long, val domain: Seq[String], val recentEvents : Map[Long, Seq[Long]] ) extends ControlEvent
+
 
 
 object ControlEvent {

@@ -64,7 +64,7 @@ object Board {
             .map(ReceivedMessage(sender, _))
             .to(boardInSink(sender))
         val out =
-          Source.actorRef[NodeMessage](1, OverflowStrategy.fail)
+          Source.actorRef[NodeMessage](20, OverflowStrategy.fail)
             .mapMaterializedValue(boardActor ! NewParticipant(sender, _))
 
         Flow.wrap(in, out)(Keep.none)

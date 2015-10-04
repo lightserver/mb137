@@ -1,11 +1,12 @@
 package pl.setblack.lsa.events
 
-/**
- * Created by jarek on 7/3/15.
- */
+
 class NodeTest extends org.scalatest.FunSpec {
+  implicit val storage = new FakeStorage
+
 
   describe("Node") {
+
     describe("when created") {
       it("should produce NoSuchElementException when head is invoked") {
         intercept[NoSuchElementException] {
@@ -101,8 +102,6 @@ class NodeTest extends org.scalatest.FunSpec {
       node1.sendEvent("testLocal", nodeLocalAddr)
       assert(domain.domainObject(0) == "testLocal")
     }
-
-    
   }
 }
 
