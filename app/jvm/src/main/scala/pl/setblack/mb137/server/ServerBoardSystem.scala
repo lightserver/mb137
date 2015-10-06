@@ -39,8 +39,6 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
     connection.send(controlMessage)
   }
 
-
-
   def registerActorConnection( subscriber : ActorRef, clientId: Long ) = {
     val connection = mainNode.registerConnection(clientId, new ServerRemoteProtocol(subscriber, clientId.toString))
   }

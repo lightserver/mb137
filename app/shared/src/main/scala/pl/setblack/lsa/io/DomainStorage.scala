@@ -5,7 +5,7 @@ import pl.setblack.lsa.events.{Domain, Event}
 import upickle.default._
 
 class DomainStorage(val path: Seq[String], val sysStorage : Storage) {
-  var saveCounter = 0
+  var saveCounter :Int= 0
 
 
 
@@ -43,7 +43,7 @@ class DomainStorage(val path: Seq[String], val sysStorage : Storage) {
         saveCounter = maxEvent
         saveCounter
       }
-    ).max
+    ).getOrElse(0).toLong
   }
 
   private def getStorePath(cnt :Integer) = {
