@@ -62,6 +62,7 @@ object Board {
 
     def boardInSink(sender: String) = Sink.actorRef[BoardEvent](boardActor, ParticipantLeft(sender))
     server.registerToRemote( boardActor )
+    server.resync()
     new Board {
       def theFlow(sender: String): Flow[String, NodeMessage, Unit] = {
         println("sendler is:"+sender)
@@ -71,7 +72,7 @@ object Board {
             .map(ReceivedMessage(sender, _))
             .to(boardInSink(sender))
         val out =
-          Source.actorRef[NodeMessage](20, OverflowStrategy.fail)
+          Source.actorRef[NodeMessage](100, OverflowStrategy.fail)
             .mapMaterializedValue(boardActor ! NewParticipant(sender, _))
 
         Flow.wrap(in, out)(Keep.none)
