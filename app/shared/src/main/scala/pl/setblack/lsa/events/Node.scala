@@ -210,7 +210,7 @@ class Node(val id: Long)( implicit val storage :Storage) {
 
 
   private def syncDomain(path: Seq[String], domain: Domain[_], syncBack : Boolean) ={
-      val event = Event(write[ControlEvent](ResyncDomain(this.id, path,  domain.recentEvents, syncBack)),0,this.id)
+      val event = Event(ControlEvent.writeEvent(ResyncDomain(this.id, path,  domain.recentEvents, syncBack)),0,this.id)
       val adr = Address(System, path)
     println("sending event:"+ event)
        this.sendEvent(event,adr)

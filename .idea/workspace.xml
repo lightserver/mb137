@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="639f61f1-5673-4964-b53f-52a00d32bb01" name="Default" comment="save server 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/jvm/src/main/resources/server3.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Board.scala" afterPath="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Board.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/io/DomainStorage.scala" afterPath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/io/DomainStorage.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerBoardSystem.scala" afterPath="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerBoardSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jvm/src/main/resources/server2.conf" afterPath="$PROJECT_DIR$/app/jvm/src/main/resources/server2.conf" />
+    <list default="true" id="639f61f1-5673-4964-b53f-52a00d32bb01" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala" afterPath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala" afterPath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala" afterPath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" afterPath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mb137.iws" />
@@ -67,31 +66,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServerBoardSystem.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerBoardSystem.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.838709">
-              <caret line="54" column="22" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Boot.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Node.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="205" column="6" selection-start-line="205" selection-start-column="6" selection-end-line="205" selection-end-column="6" />
+              <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Protocol.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Protocol.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControlEvent.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -117,31 +116,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerRemoteProtocol.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerRemoteProtocol.scala">
+      <file leaf-file-name="ServerConnection.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="30" />
+              <caret line="35" column="62" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardSystem.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/mb137/data/BoardSystem.scala">
+      <file leaf-file-name="Frontend.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/Frontend.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Board.scala">
+      <file leaf-file-name="ClientBoardSystem.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4048781">
-              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientWSProtocol.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.93018866">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+              <folding>
+                <element signature="e#31#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib.scala" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/srcs/scalajs-dom_sjs0.6_2.11-0.8.0-sources.jar!/org/scalajs/dom/raw/lib.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5846" column="15" selection-start-line="5846" selection-start-column="15" selection-end-line="5846" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -168,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Endpoint.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerNodeConnection.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerWSProtocol.scala" />
         <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientNodeConnection.scala" />
@@ -180,7 +200,6 @@
         <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/pl/setblack/lsa/WebStorage.scala" />
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/NullStorage.scala" />
         <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/pl/setblack/lsa/io/WebStorage.scala" />
-        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala" />
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/io/Storage.scala" />
         <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/BoardControllers.scala" />
         <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/lsa/io/WebStorage.scala" />
@@ -190,7 +209,6 @@
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/mb137/data/BoardDomain.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/test/scala/pl/setblack/lsa/events/NodeTest.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/test/scala/pl/setblack/lsa/events/TextsDomain.scala" />
-        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala" />
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/LoopInvocation.scala" />
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/mb137/data/BoardSystem.scala" />
         <option value="$PROJECT_DIR$/web/package.json" />
@@ -198,9 +216,7 @@
         <option value="$PROJECT_DIR$/web/vendor.json" />
         <option value="$PROJECT_DIR$/web/app/less/main.less" />
         <option value="$PROJECT_DIR$/web/app/index.html" />
-        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala" />
         <option value="$PROJECT_DIR$/web/gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/resources/application.conf" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Boot.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/lsa/io/FileStore.scala" />
@@ -211,7 +227,6 @@
         <option value="$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/srcs/akka-http-experimental_2.11-1.0-sources.jar!/akka/http/scaladsl/server/directives/WebsocketDirectives.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerRemoteProtocol.scala" />
         <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Domain.scala" />
-        <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/resources/server3.conf" />
         <option value="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/TraversableOnce.scala" />
@@ -219,6 +234,12 @@
         <option value="$PROJECT_DIR$/app/jvm/src/main/resources/server2.conf" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerBoardSystem.scala" />
         <option value="$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Board.scala" />
+        <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala" />
+        <option value="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" />
+        <option value="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/srcs/scalajs-dom_sjs0.6_2.11-0.8.0-sources.jar!/org/scalajs/dom/raw/lib.scala" />
+        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala" />
+        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala" />
+        <option value="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala" />
       </list>
     </option>
   </component>
@@ -311,6 +332,10 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -320,234 +345,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setblack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setblack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Board.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setblack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mb137" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -994,7 +793,8 @@
       <workItem from="1442572454854" duration="10939000" />
       <workItem from="1442597180333" duration="45243000" />
       <workItem from="1443905056491" duration="26543000" />
-      <workItem from="1443996113733" duration="4491000" />
+      <workItem from="1443996113733" duration="4542000" />
+      <workItem from="1444511597554" duration="2963000" />
     </task>
     <task id="LOCAL-00001" summary="First connections">
       <created>1442505720182</created>
@@ -1056,11 +856,17 @@
       <option name="project" value="LOCAL" />
       <updated>1443995872021</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="total sync">
+      <created>1444165020835</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1444165020835</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179194000" />
+    <option name="totallyTimeSpent" value="182208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1086,16 +892,16 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.48922056" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41666666" sideWeight="0.6467662" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41666666" sideWeight="0.6467662" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28854167" sideWeight="0.46268657" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26699835" sideWeight="0.76899225" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26699835" sideWeight="0.7589286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.42564952" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.42564952" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.49380806" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26699835" sideWeight="0.23100775" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26699835" sideWeight="0.24107143" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1161,7 +967,8 @@
     <MESSAGE value="gulp added" />
     <MESSAGE value="server 2 server comm" />
     <MESSAGE value="ignoring intellij target" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignoring intellij target" />
+    <MESSAGE value="total sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="total sync" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,13 +994,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/jvm/src/test/scala/pl/setblack/lsa/events/TextsDomain.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2815534">
-          <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/LoopInvocation.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1285,13 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Protocol.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/LocalInvocation.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1320,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.12-sources.jar!/akka/actor/ActorRefProvider.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1338,13 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2648402">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1369,13 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.0">
@@ -1390,26 +1162,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Domain.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/Frontend.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1417,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.488172">
           <caret line="4343" column="19" selection-start-line="4343" selection-start-column="19" selection-end-line="4343" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,7 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,7 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21914357">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="231" column="6" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,7 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.354839">
           <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,15 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69395465">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="6" selection-start-line="205" selection-start-column="6" selection-end-line="205" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1513,14 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerWSProtocol.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1533,17 +1263,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservice.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerBoardSystem.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.838709">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="22" />
           <folding />
         </state>
@@ -1559,9 +1281,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Board.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4048781">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/ServerWSProtocol.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jvm/src/main/scala/pl/setblack/mb137/server/Webservice.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/ControlEvent.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Protocol.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/Frontend.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/srcs/scalajs-dom_sjs0.6_2.11-0.8.0-sources.jar!/org/scalajs/dom/raw/lib.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5846" column="15" selection-start-line="5846" selection-start-column="15" selection-end-line="5846" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientBoardSystem.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ClientWSProtocol.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93018866">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="e#31#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

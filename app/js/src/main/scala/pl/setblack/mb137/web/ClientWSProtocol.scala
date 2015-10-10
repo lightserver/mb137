@@ -1,12 +1,25 @@
 package pl.setblack.mb137.web
 
-import org.scalajs.dom.raw.WebSocket
-import pl.setblack.lsa.events.{NodeMessageTransport, NodeMessage, Protocol}
+import org.scalajs.dom
+import org.scalajs.dom.raw.{MessageEvent, WebSocket}
+import pl.setblack.lsa.events.{Node, NodeMessageTransport, NodeMessage, Protocol}
 
 import upickle.default._
 
-class ClientWSProtocol(val connection : WebSocket) extends Protocol{
-  override def send(msg: NodeMessage): Unit =  {
-        connection.send(  write[NodeMessageTransport](msg.toTransport))
+class ClientWSProtocol(var connection: WebSocket, val node: Node) extends Protocol {
+  override def send(msg: NodeMessage): Unit = {
+    if (connection.readyState > 2) {
+      println("restarting connection")
+      connection = new WebSocket(connection.url)
+      connection.onmessage = { (event: MessageEvent) =>
+        val msg = read[NodeMessageTransport](event.data.toString).toNodeMessage
+        node.receiveMessage(msg)
+      }
+      connection.onopen = {  (event: org.scalajs.dom.raw.Event) ⇒
+        connection.send(write[NodeMessageTransport](msg.toTransport))
+      }
+    } else {
+      connection.send(write[NodeMessageTransport](msg.toTransport))
+    }
   }
 }

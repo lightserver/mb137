@@ -22,7 +22,7 @@ class ClientBoardSystem(
   override def createMainNode ():Node = {
     val node = new Node(nodeId)(storage)
 
-    node.registerConnection( serverId, new ClientWSProtocol(connection))
+    node.registerConnection( serverId, new ClientWSProtocol(connection, node))
     connection.onmessage = { (event : MessageEvent) =>
           val msg = read[NodeMessageTransport](event.data.toString).toNodeMessage
           node.receiveMessage(msg)
