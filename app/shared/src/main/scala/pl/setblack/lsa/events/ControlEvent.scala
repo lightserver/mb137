@@ -14,4 +14,6 @@ object ControlEvent {
   def parseControlEvent(ev : String ): ControlEvent =  {
       read[ControlEvent](ev)
   }
+
+  def writeEvent(ev :ControlEvent) : String = write[ControlEvent](ev)
 }
