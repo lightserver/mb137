@@ -103,22 +103,13 @@ gulp.task('scripts', function() {
     removeComments: true
   };
 
-  // prepare angular template cache from html templates
-  // (remember to change appName var to desired module name)
-  var templateStream = gulp
-    .src('**/*.html', { cwd: 'app/templates'})
-    .pipe(plugins.angularTemplatecache('templates.js', {
-      root: 'templates/',
-      module: appName,
-      htmlmin: build && minifyConfig
-    }));
 
   var scriptStream = gulp
-    .src(['templates.js', 'app.js', '**/*.js'], { cwd: 'app/scripts' })
+    .src([ 'app.js', '**/*.js'], { cwd: 'app/scripts' })
 
     .pipe(plugins.if(!build, plugins.changed(dest)));
 
-  return streamqueue({ objectMode: true }, scriptStream, templateStream)
+  return streamqueue({ objectMode: true }, scriptStream)
     .pipe(plugins.if(build, plugins.ngAnnotate()))
     .pipe(plugins.if(stripDebug, plugins.stripDebug()))
     .pipe(plugins.if(build, plugins.concat('app.js')))

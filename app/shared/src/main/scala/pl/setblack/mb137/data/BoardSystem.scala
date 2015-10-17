@@ -19,8 +19,8 @@ abstract class BoardSystem {
    def createStorage() : Storage
 
 
-  def enterMessage( txt: String) = {
-    val newPost = NewPost(txt, "irek71")
+  def enterMessage( txt: String, author:String) = {
+    val newPost = NewPost(txt, author)
     mainNode.sendEvent(BoardEvent.writeBoardEvent(newPost) ,Seq("default"))
   }
 

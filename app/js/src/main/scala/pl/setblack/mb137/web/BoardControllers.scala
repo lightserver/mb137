@@ -23,9 +23,12 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
     $.modState(_.copy(messages = domainObj.messages))
   }
 
-  def onChange(e: ReactEventI) = {
-  //  textEntered = e.target.value
+  def onChangeInputText(e: ReactEventI) = {
     $.modState(_.copy(inputText = e.target.value))
+  }
+
+  def onChangeAuthor(e: ReactEventI) = {
+    $.modState(_.copy(author = e.target.value))
   }
 
 
@@ -33,8 +36,7 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
     e.preventDefault()
 
     $.modState(s => {
-      //val newMessage = BoardMessage("ireeg", s.inputText)
-      connection.system.enterMessage(s.inputText)
+      connection.system.enterMessage(s.inputText, s.author)
       s.copy( messages = connection.system.getBoardMutable().messages)
     })
   }
@@ -58,8 +60,7 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
   }
 
   def newMessage(b : BoardMessage): Unit = {
-    $.modState(s => {
-      BoardState(s.messages :+ b, "","")
+    $.modState(s => { s.copy( messages = s.messages :+ b, inputText = "")
     })
   }
 }
@@ -83,22 +84,21 @@ object BoardControllers {
       BoardMessage("irreeg", "aaa"))
 
     val BoardApp = ReactComponentB[Unit]("TodoApp")
-      .initialState(BoardState(toDisp, "", ""))
+      .initialState(BoardState(toDisp, "", "", "anonymous"))
       .backend(new BoardBackend(_))
       .render((_, S, B) =>
       <.div(
         <.h3("TODO"),
         TopicBoard(S.messages),
         <.form(^.onSubmit ==> B.handleSubmit,
-          <.input(^.onChange ==> B.onChange, ^.value := S.inputText),
+          <.input(^.onChange ==> B.onChangeAuthor, ^.value := S.author),
+          <.textarea(^.onChange ==> B.onChangeInputText, ^.value := S.inputText),
           <.button("Add #", S.messages.length + 1),
           <.button(^.onClick ==> B.handleLoad)("Load")
         )
       )
       ).buildU
-
     React.render(BoardApp(), document.getElementById("react"))
-
   }
 
 
