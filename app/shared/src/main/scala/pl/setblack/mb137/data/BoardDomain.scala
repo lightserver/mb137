@@ -11,8 +11,8 @@ class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutabl
       val boardEv = BoardEvent.readBoardEvent(event.content)
       println("event is " + boardEv.toString)
       boardEv match {
-        case NewPost(msg, author) =>
-          domainObject.append( BoardMessage(author, msg))
+        case NewPost(msg, author, timestamp) =>
+          domainObject.append( BoardMessage(author, msg, timestamp))
       }
     println("listeners:" + listeners.toString)
   }

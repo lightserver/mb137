@@ -7,7 +7,7 @@ sealed trait  BoardEvent  {
 }
 
 
-case class NewPost(val message: String, val author: String) extends BoardEvent {
+case class NewPost(val message: String, val author: String, timestamp : Long) extends BoardEvent {
 
 }
 

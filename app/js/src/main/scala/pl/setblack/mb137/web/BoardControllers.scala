@@ -80,8 +80,7 @@ object BoardControllers {
 
 
 
-    val toDisp = Seq(BoardMessage("cze", "...."),
-      BoardMessage("irreeg", "aaa"))
+    val toDisp = Seq()
 
     val BoardApp = ReactComponentB[Unit]("TodoApp")
       .initialState(BoardState(toDisp, "", "", "anonymous"))
@@ -91,10 +90,12 @@ object BoardControllers {
         <.h3("Galaxy News"),
         TopicBoard(S.messages),
         <.form(^.onSubmit ==> B.handleSubmit,
+          <.label("nick"),
           <.input(^.onChange ==> B.onChangeAuthor, ^.value := S.author),
           <.textarea(^.onChange ==> B.onChangeInputText, ^.value := S.inputText),
-          <.button("Add #", S.messages.length + 1),
-          <.button(^.onClick ==> B.handleLoad)("Load")
+          <.button("Send", S.messages.length + 1)
+          /*,
+          <.button(^.onClick ==> B.handleLoad)("Load")*/
         )
       )
       ).buildU

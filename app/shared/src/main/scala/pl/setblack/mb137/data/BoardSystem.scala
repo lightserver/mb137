@@ -1,5 +1,7 @@
 package pl.setblack.mb137.data
 
+import java.util.Date
+
 import pl.setblack.lsa.events.Node
 import pl.setblack.lsa.io.Storage
 import upickle._
@@ -20,7 +22,7 @@ abstract class BoardSystem {
 
 
   def enterMessage( txt: String, author:String) = {
-    val newPost = NewPost(txt, author)
+    val newPost = NewPost(txt, author, new Date().getTime())
     mainNode.sendEvent(BoardEvent.writeBoardEvent(newPost) ,Seq("default"))
   }
 
