@@ -5,6 +5,7 @@ import japgolly.scalajs.react.vdom.prefix_<^._
 import org.scalajs.dom.document
 import pl.setblack.lsa.events.{Event, DomainListener}
 import pl.setblack.mb137.data.{BoardMutable, BoardDomain, BoardMessage, BoardState}
+import pl.setblack.moment.Moment
 import upickle._
 import scalajs.concurrent.JSExecutionContext.Implicits.runNow
 import org.scalajs.dom.ext.Ajax
@@ -71,7 +72,11 @@ object BoardControllers {
   def initBoard() = {
 
     val PostedMessage = ReactComponentB[BoardMessage]("PostedMessage")
-      .render(message => <.li(<.span(^.className:="author")(message.author),<.span(message.txt)))
+      .render(message => <.li(
+        <.span(^.className:="author")(message.author),
+        <.span(^.className:="time")(Moment(message.timestamp).fromNow),
+        <.span(message.txt)))
+
       .build
 
     val TopicBoard = ReactComponentB[Seq[BoardMessage]]("TopicBoard")

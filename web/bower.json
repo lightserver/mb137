@@ -3,5 +3,7 @@
   "author": "jarek ratajski <jratajski@gmail.com>",
   "private": "true",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "moment": "~2.10.6"
+  }
 }

@@ -3,9 +3,14 @@
   <component name="ScalaCompilerConfiguration">
     <option name="incrementalityType" value="SBT" />
     <profile name="SBT 1" modules="fooJVM,root,mb137JVM,jvm,shared,mb137,appJVM" />
-    <profile name="SBT 2" modules="fooJS,mb137JS,appJS">
+    <profile name="SBT 2" modules="fooJS,mb137JS">
       <plugins>
         <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.7/jars/scalajs-compiler_2.11.7-0.6.4.jar" />
+      </plugins>
+    </profile>
+    <profile name="SBT 3" modules="appJS">
+      <plugins>
+        <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.7/jars/scalajs-compiler_2.11.7-0.6.5.jar" />
       </plugins>
     </profile>
   </component>

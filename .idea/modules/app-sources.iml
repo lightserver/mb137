@@ -18,7 +18,6 @@
     <orderEntry type="library" name="SBT: com.lihaoyi:scalarx_sjs0.6_2.11:0.2.8:jar" level="project" />
     <orderEntry type="library" name="SBT: com.lihaoyi:scalatags_sjs0.6_2.11:0.5.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-js:scalajs-dom_sjs0.6_2.11:0.8.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
@@ -55,5 +54,6 @@
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-remote_2.11:2.3.6:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty:3.8.0.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: org.uncommons.maths:uncommons-maths:1.2.2a:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.5:jar" level="project" />
   </component>
 </module>

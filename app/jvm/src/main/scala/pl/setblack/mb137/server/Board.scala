@@ -91,5 +91,5 @@ case class NewNode(name: String, subscriber: ActorRef, clientId: Long) extends B
 case class RegisteredNode(name: String, server: ActorRef, serverId: Long) extends BoardEvent
 case class ParticipantLeft(name: String) extends BoardEvent
 case class ReceivedMessage(sender: String, message: String) extends BoardEvent {
-  def toMessage: BoardMessage = BoardMessage(sender, read[BoardMessage](message).txt)
+  //def toMessage: BoardMessage = BoardMessage(sender, read[BoardMessage](message).txt)
 }
