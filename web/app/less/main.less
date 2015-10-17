@@ -1,4 +1,28 @@
 body {
-  color: black;
+  color: white;
+  background: darkblue;
+}
+#react {
+  width: 100%;
 
+  .messages {
+    padding :0px;
+    li {
+      list-style: none;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255, 0.5);
+      padding: 1em;
+      margin-bottom: 0.5em;
+      box-shadow: 2px 4px 6px rgba(32,255,32, 0.7);
+
+      > .author {
+         font-weight: bold;
+         display: inline-block;
+         width :15%;
+         margin-right: 1em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
 }

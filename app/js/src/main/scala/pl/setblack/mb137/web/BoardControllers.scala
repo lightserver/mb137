@@ -71,11 +71,11 @@ object BoardControllers {
   def initBoard() = {
 
     val PostedMessage = ReactComponentB[BoardMessage]("PostedMessage")
-      .render(message => <.li(message.author, message.txt))
+      .render(message => <.li(<.span(^.className:="author")(message.author),<.span(message.txt)))
       .build
 
     val TopicBoard = ReactComponentB[Seq[BoardMessage]]("TopicBoard")
-      .render(messages => <.div("topic", <.ol(messages.map(m => PostedMessage(m)))))
+      .render(messages => <.div("topic", <.ul(^.className := "messages")(messages.map(m => PostedMessage(m)))))
       .build
 
 
@@ -88,7 +88,7 @@ object BoardControllers {
       .backend(new BoardBackend(_))
       .render((_, S, B) =>
       <.div(
-        <.h3("TODO"),
+        <.h3("Galaxy News"),
         TopicBoard(S.messages),
         <.form(^.onSubmit ==> B.handleSubmit,
           <.input(^.onChange ==> B.onChangeAuthor, ^.value := S.author),
