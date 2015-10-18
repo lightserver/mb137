@@ -11,17 +11,19 @@ import scalajs.concurrent.JSExecutionContext.Implicits.runNow
 import org.scalajs.dom.ext.Ajax
 import scala.scalajs.js.timers._
 import japgolly.scalajs.react._
-
 import scala.scalajs.js.annotation.JSExport
 
 
-class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[BoardMutable] {
-  val connection = new ServerConnection(this)
+
+class BoardBackend(backendInitializer: BackendInitializer,
+                   connection: ServerConnection,
+                   $: BackendScope[Unit, BoardState]) extends DomainListener[BoardMutable] {
+   backendInitializer.backend = Some(this)
 
 
   override def onDomainChanged(domainObj: BoardMutable, ev: Event): Unit =  {
     println("domain has changed")
-    $.modState(_.copy(messages = domainObj.messages))
+    $.modState(_.copy(messages = domainObj.getDisplayedMessages()))
   }
 
   def onChangeInputText(e: ReactEventI) = {
@@ -33,12 +35,15 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
   }
 
 
+
+
+
   def handleSubmit(e: ReactEventI) = {
     e.preventDefault()
 
     $.modState(s => {
       connection.system.enterMessage(s.inputText, s.author)
-      s.copy( messages = connection.system.getBoardMutable().messages)
+      s.copy( messages = connection.system.getBoardMutable().getDisplayedMessages())
     })
   }
 
@@ -50,13 +55,13 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
       connection.system.load()
       //s.copy( messages = s.messages :+ newMessage)
       println("loaded")
-      s.copy( messages = connection.system.getBoardMutable().messages)
+      s.copy( messages = connection.system.getBoardMutable().getDisplayedMessages())
     })
   }
 
   def init(): Unit = {
     $.modState(s => {
-      s.copy( messages = connection.system.getBoardMutable().messages)
+      s.copy( messages = connection.system.getBoardMutable().getDisplayedMessages())
     })
   }
 
@@ -66,17 +71,45 @@ class BoardBackend($: BackendScope[Unit, BoardState]) extends DomainListener[Boa
   }
 }
 
+class MessageBackend (connection: ServerConnection , $: BackendScope[BoardMessage, Unit]) {
+  def delete( uuid :String) = {
+    (e: ReactEventI) => {
+      println (s"deleting ${uuid}")
+      connection.system.deleteMessage(uuid)
+    }
+  }
+}
+
+
+class BackendInitializer extends DomainListener[BoardMutable]  {
+   var backend : Option[BoardBackend] = None
+
+   def init() = {
+        backend.foreach( b => b.init())
+   }
+
+  override def onDomainChanged(domain: BoardMutable, ev: Event): Unit
+    = backend.foreach( _.onDomainChanged(domain, ev))
+}
 
 object BoardControllers {
 
+
   def initBoard() = {
+    val backendInitializer = new BackendInitializer
+    val connection = new ServerConnection(backendInitializer)
 
     val PostedMessage = ReactComponentB[BoardMessage]("PostedMessage")
-      .render(message => <.li(
-        <.span(^.className:="author")(message.author),
-        <.span(^.className:="time")(Moment(message.timestamp).fromNow),
-        <.span(message.txt)))
-
+      .stateless
+      .backend( new MessageBackend(connection, _))
+      .render(( S, MS,B) =>
+      <.li(
+        <.span(^.className:="author")(S.author),
+        <.span(^.className:="time")(Moment(S.timestamp).fromNow),
+        <.span(S.txt),
+          <.button(^.onClick==> B.delete(S.uuid)) ( "x")
+        )
+        )
       .build
 
     val TopicBoard = ReactComponentB[Seq[BoardMessage]]("TopicBoard")
@@ -84,13 +117,13 @@ object BoardControllers {
       .build
 
 
-
     val toDisp = Seq()
 
     val BoardApp = ReactComponentB[Unit]("TodoApp")
       .initialState(BoardState(toDisp, "", "", "anonymous"))
-      .backend(new BoardBackend(_))
+      .backend(new BoardBackend(backendInitializer, connection, _))
       .render((_, S, B) =>
+
       <.div(
         <.h3("Galaxy News"),
         TopicBoard(S.messages),

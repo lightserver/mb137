@@ -25,6 +25,7 @@ val app = crossProject.settings(
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 
+
 ).jsSettings(
     libraryDependencies ++= Seq(
       "org.scala-js" %%% "scalajs-dom" % "0.8.0",
@@ -50,8 +51,7 @@ val app = crossProject.settings(
 
 lazy val appJS = app.js.settings(
 
-  // include the libanius core JAR
-  //jarek rem:unmanagedBase <<= baseDirectory(_ / "../shared/lib")
+
 )
 
 lazy val appJVM = app.jvm.settings(
@@ -97,6 +97,8 @@ lazy val appJVM = app.jvm.settings(
     IO.copy(mappings, true)
     mappings.map(_._2)
   }
+
+
 
 
 ).enablePlugins(JavaAppPackaging)

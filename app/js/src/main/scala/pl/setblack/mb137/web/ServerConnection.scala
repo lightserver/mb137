@@ -6,13 +6,13 @@ import pl.setblack.lsa.events._
 import pl.setblack.mb137.data.BoardMessage
 import upickle.default._
 
-class ServerConnection(val backend : BoardBackend)  {
+class ServerConnection(val backend : BackendInitializer)  {
   val connection: WebSocket = startWs()
   var system:ClientBoardSystem = null
 
-  def sendBoardMessage( msg: BoardMessage): Unit = {
+ /* def sendBoardMessage( msg: BoardMessage): Unit = {
     connection.send(write(msg))
-  }
+  }*/
 
   private def processSysMessage(ev : Event, connection : WebSocket): Unit = {
 
@@ -21,7 +21,7 @@ class ServerConnection(val backend : BoardBackend)  {
       case RegisteredClient(id,serverId) => {
         println("registered once as: " + id)
 
-        system = new ClientBoardSystem(id, connection, serverId, backend)
+        system = new ClientBoardSystem(id, connection, serverId)
         system.mainNode.registerDomainListener(backend, Seq("default"))
         backend.init()
       }

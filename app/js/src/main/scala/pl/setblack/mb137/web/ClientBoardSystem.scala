@@ -10,8 +10,8 @@ import upickle.default._
 class ClientBoardSystem(
                          nodeId: Long,
                          connection :WebSocket,
-                         serverId : Long,
-                         backend : BoardBackend) extends BoardSystem {
+                         serverId : Long
+                         ) extends BoardSystem {
 
 
 

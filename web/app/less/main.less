@@ -7,7 +7,7 @@ body {
   color: white;
   font-size: 16px;
   min-height: 100%;
-  padding: 0;
+  padding: 1em;
   margin: 0;
   .gradient1();
 }
@@ -16,7 +16,9 @@ body {
 
   .messages {
     padding :0px;
+
     li {
+      position: relative;
       background : white;
       color: black;
       list-style: none;
@@ -44,6 +46,14 @@ body {
         border-radius: 8px;
         border: 1px dashed rgba(128,128,128,0.5);
       }
+       > button {
+         position: absolute;
+         background : red;
+         color: white;
+         top: 0px;
+         right: 0px;
+         border-radius: 50%;
+       }
 
     }
   }

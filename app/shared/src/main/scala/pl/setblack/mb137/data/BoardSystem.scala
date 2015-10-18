@@ -22,8 +22,17 @@ abstract class BoardSystem {
 
 
   def enterMessage( txt: String, author:String) = {
-    val newPost = NewPost(txt, author, new Date().getTime())
+    val uuid = java.util.UUID.randomUUID.toString
+    val newPost = NewPost(txt, author, new Date().getTime(), uuid)
+
     mainNode.sendEvent(BoardEvent.writeBoardEvent(newPost) ,Seq("default"))
+  }
+
+  def deleteMessage( uuid: String) = {
+   val deletePost = DeletePost( uuid)
+
+
+    mainNode.sendEvent(BoardEvent.writeBoardEvent(deletePost) ,Seq("default"))
   }
 
   def getBoardMutable():BoardMutable  = {
