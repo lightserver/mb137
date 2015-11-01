@@ -12,5 +12,5 @@ trait Moment  extends js.Object{
 @js.native
 object Moment extends js.Object {
   def apply() : Moment = js.native
-  def apply(time: Long) : Moment = js.native
+  def apply(time: Double) : Moment = js.native
 }

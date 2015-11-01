@@ -37,7 +37,7 @@ object Board {
             server.registerActorConnection( subscriber, clientId)
             server.registeredRemoteActor(self, subscriber)
           case RegisteredNode(name ,subscriber, serverId) =>
-            println(s"confirmed erver node ${serverId}")
+            println(s"confirmed server node ${serverId}")
             server.registerActorConnection( subscriber, serverId)
           case msg: ReceivedMessage    ⇒ {
             println("received from "+msg.sender)
@@ -65,8 +65,8 @@ object Board {
     server.resync()
     new Board {
       def theFlow(sender: String): Flow[String, NodeMessage, Unit] = {
-        println("sendler is:"+sender)
-        println(s"sendler2 is: ${sender}")
+
+        println(s"sender is: ${sender}")
         val in =
           Flow[String]
             .map(ReceivedMessage(sender, _))

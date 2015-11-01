@@ -24,10 +24,6 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
   val theBoard = Board.create(system, serverNode)
 
 
-
-
-
-
   def route =
     get {
       pathSingleSlash {

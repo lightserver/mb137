@@ -46,7 +46,7 @@ class ServerConnection(val backend : BackendInitializer)  {
       println("received message:" +msg.toString)
        msg.destination.target match {
          case pl.setblack.lsa.events.System => processSysMessage(msg.event, connection)
-         case x => println("nic nie kumam")
+         case x => println("unknown message")
        }
       // backend.newMessage(msg)
     }

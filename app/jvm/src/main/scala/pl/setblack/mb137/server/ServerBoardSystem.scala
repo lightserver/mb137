@@ -9,7 +9,7 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
 
 
 
-  var nextClientNodeId:Long = 1024*mainNode.id
+  var nextClientNodeId:Long = 2048*mainNode.id + scala.util.Random.nextInt(1024)
 
 
   def nextClientNode:Long = {
