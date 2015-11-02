@@ -7,8 +7,6 @@ import pl.setblack.mb137.data.BoardSystem
 
 class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends BoardSystem{
 
-
-
   var nextClientNodeId:Long = 2048*mainNode.id + scala.util.Random.nextInt(1024)
 
 
@@ -41,6 +39,7 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
 
   def registerActorConnection( subscriber : ActorRef, clientId: Long ) = {
     val connection = mainNode.registerConnection(clientId, new ServerRemoteProtocol(subscriber, clientId.toString))
+    resync()
   }
 
   def registeredRemoteActor(board: ActorRef, subscriber: ActorRef): Unit = {

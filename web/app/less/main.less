@@ -27,7 +27,13 @@ body {
       padding: 1em;
       margin-bottom: 0.5em;
       box-shadow: 2px 4px 6px rgba(32,255,32, 0.7);
-
+      &::after {
+        content: "";
+        clear: both;
+        width: 0px;
+        height: 0px;
+        display: block;
+      }
       > .author {
          font-weight: bold;
          display: inline-block;
@@ -45,6 +51,7 @@ body {
         float: right;
         border-radius: 8px;
         border: 1px dashed rgba(128,128,128,0.5);
+
       }
        > button {
          position: absolute;
