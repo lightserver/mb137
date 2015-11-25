@@ -39,7 +39,7 @@ class ServerConnection(val backend : BackendInitializer)  {
       event
     }
     connection.onerror = { (event: org.scalajs.dom.raw.ErrorEvent) ⇒
-
+      println("had error")
     }
     connection.onmessage = { (event: org.scalajs.dom.raw.MessageEvent) ⇒
        val msg = read[NodeMessageTransport](event.data.toString).toNodeMessage
@@ -52,6 +52,7 @@ class ServerConnection(val backend : BackendInitializer)  {
     }
     connection.onclose = { (event: org.scalajs.dom.raw.Event) ⇒
     }
+    println("started ws")
     connection
   }
 

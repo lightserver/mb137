@@ -106,12 +106,10 @@ class Node(val id: Long)( implicit val storage :Storage) {
   }
 
   def registerDomainListener[O](listener: DomainListener[O], path: Seq[String]): Unit = {
-    println("registering listener for:" + path.toString)
-    println("a domeny to:" + this.domains.keys.toString)
     this.filterDomains(path).foreach(x => x match {
-      case d: Domain[O] => {
+      case d: Domain[_] => {
         println("filtered domain:" + path)
-        d.registerListener(listener)
+        d.asInstanceOf[Domain[O]].registerListener(listener)
       }
     })
   }
@@ -180,18 +178,6 @@ class Node(val id: Long)( implicit val storage :Storage) {
     if ( domain.receiveEvent(event)) {
       saveEvent(event, domain.path)
     }
-  }
-
-  /**
-   * Send event to local domains.
-   *
-   */
-  private def receiveLocalEvent[T](t: T, adr: Address): Unit = {
-
-  }
-
-  private def getLocalLoopConnection(): NodeConnection = {
-    this.loopConnection
   }
 
   def getDomainObject(path: Seq[String]) =  {
