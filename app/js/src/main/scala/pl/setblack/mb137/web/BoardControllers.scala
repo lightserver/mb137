@@ -132,8 +132,6 @@ object BoardControllers {
           <.input(^.onChange ==> B.onChangeAuthor, ^.value := S.author),
           <.textarea(^.onChange ==> B.onChangeInputText, ^.value := S.inputText),
           <.button("Send", S.messages.length + 1)
-          /*,
-          <.button(^.onClick ==> B.handleLoad)("Load")*/
         )
       )
       ).buildU

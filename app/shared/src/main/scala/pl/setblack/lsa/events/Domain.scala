@@ -5,12 +5,16 @@ import upickle.default._
 
 import scala.collection.mutable.ArrayBuffer
 
-abstract class Domain[O](var domainObject: O, val path: Seq[String]) {
+abstract class Domain[O](private var domainState: O, val path: Seq[String]) {
+
+
   var recentEvents = Map[Long, Seq[Long]]()
   var listeners = Seq[DomainListener[O]]()
   val eventsHistory = scala.collection.mutable.ArrayBuffer.empty[Event]
 
-  def seenEvent(event: Event ) : Boolean = {
+  def getState() = domainState
+
+  private def seenEvent(event: Event ) : Boolean = {
     recentEvents.get(event.sender).getOrElse(Seq()).contains( event.id)
   }
 
@@ -25,8 +29,8 @@ abstract class Domain[O](var domainObject: O, val path: Seq[String]) {
         recentEvents.getOrElse(event.sender, Seq()) :+ event.id))
       println ("contains:" + seenEvent(event))
       eventsHistory += event
-      processDomain(event)
-      listeners.foreach(l => l.onDomainChanged(domainObject, event))
+      processDomain(domainState, event)
+      listeners.foreach(l => l.onDomainChanged(domainState, event))
       true
     } else {
       false
@@ -38,10 +42,6 @@ abstract class Domain[O](var domainObject: O, val path: Seq[String]) {
     listeners = listeners :+ listener
   }
 
-  /*def restoreDomain(events: Seq[Event]): Unit = {
-    println("events is : " +events )
-    events.foreach(e => receiveEvent(e))
-  }*/
 
-  def processDomain(event: Event)
+  def processDomain(state: O, event: Event)
 }

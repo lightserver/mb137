@@ -3,9 +3,9 @@ package pl.setblack.lsa.events
 import scala.collection.mutable.ArrayBuffer
 
 class TextsDomain extends Domain[ArrayBuffer[String]](new ArrayBuffer[String](), Seq("")){
-   def processDomain( event : Event) = {
+   def processDomain( stateObject: ArrayBuffer[String], event : Event) = {
        event.content match  {
-         case x:String => domainObject += x
+         case x:String => stateObject += x
 
        }
    }

@@ -195,7 +195,7 @@ class Node(val id: Long)( implicit val storage :Storage) {
   }
 
   def getDomainObject(path: Seq[String]) =  {
-      domains.get(path).get.domainObject
+      domains.get(path).get.getState()
   }
 
   def getNextEventId () : Long = {
