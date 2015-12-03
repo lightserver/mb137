@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="639f61f1-5673-4964-b53f-52a00d32bb01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" afterPath="$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala" afterPath="$PROJECT_DIR$/app/js/src/main/scala/pl/setblack/mb137/web/ServerConnection.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mb137.iws" />
@@ -97,8 +95,8 @@
       <file leaf-file-name="Node.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8113821">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="4.718699">
+              <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -959,7 +957,7 @@
       <workItem from="1447305031421" duration="199000" />
       <workItem from="1447305497186" duration="606000" />
       <workItem from="1447316443224" duration="627000" />
-      <workItem from="1448466103292" duration="2341000" />
+      <workItem from="1448466103292" duration="2433000" />
     </task>
     <task id="LOCAL-00001" summary="First connections">
       <created>1442505720182</created>
@@ -1087,11 +1085,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448466737067</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="before refactoring of id">
+      <created>1448468507880</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1448468507880</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216210000" />
+    <option name="totallyTimeSpent" value="216302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1120,7 +1124,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41666666" sideWeight="0.6467662" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38125" sideWeight="0.46268657" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2692095" sideWeight="0.5813953" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2692095" sideWeight="0.5813953" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.42564952" order="1" side_tool="false" content_ui="tabs" />
@@ -1173,7 +1177,8 @@
     <MESSAGE value="etwas&#10;" />
     <MESSAGE value="naive resending&#10;" />
     <MESSAGE value="cleaned naming" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned naming" />
+    <MESSAGE value="before refactoring of id" />
+    <option name="LAST_COMMIT_MESSAGE" value="before refactoring of id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1565,8 +1570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/src/main/scala/pl/setblack/lsa/events/Node.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8113821">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="4.718699">
+          <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
           <folding />
         </state>
       </provider>
