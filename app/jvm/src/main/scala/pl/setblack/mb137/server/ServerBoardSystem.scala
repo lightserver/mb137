@@ -5,9 +5,11 @@ import pl.setblack.lsa.events.{NodeConnection, NodeMessage, Node}
 import pl.setblack.lsa.io.FileStore
 import pl.setblack.mb137.data.BoardSystem
 
-class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends BoardSystem{
+import scala.concurrent.{ExecutionContext, Promise}
 
-  var nextClientNodeId:Long = 2048*mainNode.id + scala.util.Random.nextInt(1024)
+class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends BoardSystem{
+  import ExecutionContext.Implicits.global
+  var nextClientNodeId:Long = 2048*nodeId + scala.util.Random.nextInt(1024)
 
 
   def nextClientNode:Long = {
@@ -22,7 +24,8 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
 
   override def createMainNode ():Node = {
     println(s"creating node with id:${nodeId}")
-    val node = new Node(nodeId)(storage)
+
+    val node = new Node(Promise[Long].success(nodeId).future)(storage)
 
     node
   }
@@ -34,7 +37,11 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
   def registerConnection( subscriber : ActorRef, clientId: Long ) = {
     val connection = mainNode.registerConnection(clientId, new ServerWSProtocol(subscriber))
     val controlMessage = mainNode.createClientIdMessage(clientId)
-    connection.send(controlMessage)
+    for {
+      vc <- connection
+      msg <-controlMessage
+    } yield vc.send(msg)
+
   }
 
   def registerActorConnection( subscriber : ActorRef, clientId: Long ) = {

@@ -1,5 +1,7 @@
 package pl.setblack.lsa.events
 
+import scala.concurrent.Await
+import scala.concurrent.duration._
 
 class NodeTest extends org.scalatest.FunSpec {
   implicit val storage = new FakeStorage
@@ -49,10 +51,12 @@ class NodeTest extends org.scalatest.FunSpec {
 
       it("should send message to Node1") {
         node1.sendEvent("testLocal", node1Addr)
+        wait(node1)
         assert( history.values(0) == "testLocal")
       }
       it("should send message to Node1 via All") {
         node1.sendEvent("testLocal", nodeAllAddr)
+        wait(node1)
         assert( history.values(0) == "testLocal")
       }
       it("should send message to Node1 via Local") {
@@ -85,11 +89,17 @@ class NodeTest extends org.scalatest.FunSpec {
 
       it("should send message") {
         node1.sendEvent("test", node2Addr)
+        wait(node1)
         assert( history.values(0) == "test")
       }
     }
  }
 
+
+  def wait(node1: Node): node1.id.type = {
+    Thread.sleep(2)
+    Await.ready(node1.id, 1 seconds)
+  }
 
   describe("Loop domain  connection") {
     val node1 = new Node(1)
@@ -100,6 +110,7 @@ class NodeTest extends org.scalatest.FunSpec {
 
     it("should send message to Node1") {
       node1.sendEvent("testLocal", nodeLocalAddr)
+      wait(node1)
       assert(domain.getState()(0) == "testLocal")
     }
   }
