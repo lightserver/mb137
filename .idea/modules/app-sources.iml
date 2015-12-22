@@ -55,5 +55,7 @@
     <orderEntry type="library" name="SBT: io.netty:netty:3.8.0.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: org.uncommons.maths:uncommons-maths:1.2.2a:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.5:jar" level="project" />
+    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_sjs0.6_2.11:0.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_2.11:0.9:jar" level="project" />
   </component>
 </module>

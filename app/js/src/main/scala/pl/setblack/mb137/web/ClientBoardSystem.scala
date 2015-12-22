@@ -1,6 +1,6 @@
 package pl.setblack.mb137.web
 
-import pl.setblack.lsa.io.{Storage, WebStorage}
+import pl.setblack.lsa.io.{ClientWSProtocol, Storage, WebStorage}
 import org.scalajs.dom.raw.{MessageEvent, WebSocket}
 import pl.setblack.lsa.events.{DomainListener, NodeMessageTransport, Node}
 import pl.setblack.mb137.data.BoardSystem

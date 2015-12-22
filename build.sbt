@@ -19,9 +19,8 @@ val app = crossProject.settings(
 
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "scalatags" % "0.5.1",
-    //"com.lihaoyi" %%% "utest" % "0.3.0",
-    "com.lihaoyi" %%% "upickle" % "0.3.6"
-
+    "com.lihaoyi" %%% "upickle" % "0.3.6",
+    "pl.setblack.lsa" %%% "cataracta" % "0.9"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 
