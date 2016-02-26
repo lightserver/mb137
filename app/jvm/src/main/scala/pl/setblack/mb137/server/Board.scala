@@ -75,7 +75,7 @@ object Board {
           Source.actorRef[NodeMessage](100, OverflowStrategy.fail)
             .mapMaterializedValue(boardActor ! NewParticipant(sender, _))
 
-        Flow.wrap(in, out)(Keep.none)
+        Flow.fromSinkAndSource(in, out)
       }
       def injectMessage(message: BoardMessage): Unit = boardActor ! message // non-streams interface
     }

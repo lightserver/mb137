@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="appJVM" external.linked.project.path="$MODULE_DIR$/../../app/jvm" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../../app/jvm/target/scala-2.11/classes" />
     <output-test url="file://$MODULE_DIR$/../../app/jvm/target/scala-2.11/test-classes" />
     <exclude-output />
@@ -38,23 +38,25 @@
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scalaz:scalaz-core_2.11:7.1.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.spire-math:jawn-parser_2.11:0.7.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-actor_2.11:2.3.12:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-http-core-experimental_2.11:1.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-http-experimental_2.11:1.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-parsing-experimental_2.11:1.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-stream-experimental_2.11:1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.reactivestreams:reactive-streams:1.0.0:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-reflect:2.11.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_2.11:0.3.6:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.11:2.2.1:jar" level="project" />
-    <orderEntry type="module" module-name="app-sources" exported="" />
-    <orderEntry type="library" name="SBT: com.lihaoyi:derive_2.11:0.3.6:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.protobuf:protobuf-java:2.5.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-remote_2.11:2.3.6:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty:3.8.0.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: org.uncommons.maths:uncommons-maths:1.2.2a:jar" level="project" />
-    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_2.11:0.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:derive_2.11:0.3.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:upickle_2.11:0.3.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe:ssl-config-akka_2.11:0.1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe:ssl-config-core_2.11:0.1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-http-core-experimental_2.11:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-http-experimental_2.11:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-parsing-experimental_2.11:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-stream-experimental_2.11:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.spire-math:jawn-parser_2.11:0.8.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_2.11:0.95:jar" level="project" />
+    <orderEntry type="module" module-name="app-sources" exported="" />
   </component>
 </module>

@@ -7,6 +7,7 @@ import pl.setblack.mb137.data.BoardMessage
 import upickle.default._
 
 class ServerConnection(val backend : BackendInitializer)  {
+  val connectionData = new ConnectionData
   val connection: WebSocket = startWs()
   var system:ClientBoardSystem = null
 
@@ -23,10 +24,11 @@ class ServerConnection(val backend : BackendInitializer)  {
 
         system = new ClientBoardSystem(id, connection, serverId)
         system.mainNode.registerDomainListener(backend, Seq("default"))
+
         backend.init()
       }
       case x =>
-        system.mainNode.processSysMessage(ev)
+        system.mainNode.processSysMessage(ev, connectionData)
 
     }
   }

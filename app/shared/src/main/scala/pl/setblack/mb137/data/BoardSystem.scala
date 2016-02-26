@@ -11,7 +11,7 @@ abstract class BoardSystem {
   val  storage = createStorage()
   val mainNode = createMainNode()
 
-  mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
+  val boardRef = mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
 
   load()
   resync()
@@ -24,15 +24,13 @@ abstract class BoardSystem {
   def enterMessage( txt: String, author:String) = {
     val uuid = java.util.UUID.randomUUID.toString
     val newPost = NewPost(txt, author, new Date().getTime(), uuid)
-
-    mainNode.sendEvent(BoardEvent.writeBoardEvent(newPost) ,Seq("default"))
+    boardRef.send(newPost)
   }
 
   def deleteMessage( uuid: String) = {
    val deletePost = DeletePost( uuid)
 
-
-    mainNode.sendEvent(BoardEvent.writeBoardEvent(deletePost) ,Seq("default"))
+    boardRef.send(deletePost)
   }
 
   def getBoardMutable():BoardMutable  = {

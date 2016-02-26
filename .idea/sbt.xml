@@ -16,9 +16,19 @@
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
-        <option name="resolveClassifiers" value="true" />
         <option name="resolveSbtClassifiers" value="true" />
         <option name="sbtVersion" value="0.13.9" />
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app/js" />
+            <option value="$PROJECT_DIR$/app/js/project" />
+            <option value="$PROJECT_DIR$/app/jvm" />
+            <option value="$PROJECT_DIR$/app/jvm/project" />
+            <option value="$PROJECT_DIR$/app/shared" />
+            <option value="$PROJECT_DIR$/project" />
+          </set>
+        </option>
       </SbtProjectSettings>
     </option>
     <option name="vmParameters" value="" />

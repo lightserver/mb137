@@ -1,16 +1,17 @@
 package pl.setblack.mb137.server
 
 import akka.actor.{ActorSystem, ActorRef}
-import pl.setblack.lsa.events.{NodeConnection, NodeMessage, Node}
+import pl.setblack.lsa.events.{ConnectionData, NodeConnection, NodeMessage, Node}
 import pl.setblack.lsa.io.FileStore
 import pl.setblack.mb137.data.BoardSystem
 
+import scala.collection.mutable
 import scala.concurrent.{ExecutionContext, Promise}
 
 class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends BoardSystem{
   import ExecutionContext.Implicits.global
   var nextClientNodeId:Long = 2048*nodeId + scala.util.Random.nextInt(1024)
-
+  val connectionData = mutable.Map[Long, ConnectionData]()
 
   def nextClientNode:Long = {
     nextClientNodeId = nextClientNodeId + 1
@@ -31,7 +32,8 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
   }
 
   def receiveMessage( msg : NodeMessage): Unit = {
-    mainNode.receiveMessage(msg)
+    mainNode.receiveMessage(msg,
+      this.connectionData.getOrElseUpdate( msg.event.sender,  new ConnectionData()))
   }
 
   def registerConnection( subscriber : ActorRef, clientId: Long ) = {

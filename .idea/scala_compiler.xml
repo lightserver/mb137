@@ -10,7 +10,7 @@
     </profile>
     <profile name="SBT 3" modules="appJS">
       <plugins>
-        <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.7/jars/scalajs-compiler_2.11.7-0.6.5.jar" />
+        <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.7/jars/scalajs-compiler_2.11.7-0.6.7.jar" />
       </plugins>
     </profile>
   </component>
