@@ -33,9 +33,7 @@ abstract class BoardSystem {
     boardRef.send(deletePost)
   }
 
-  def getBoardMutable():BoardMutable  = {
-    mainNode.getDomainObject(Seq("default")).asInstanceOf[BoardMutable]
-  }
+
 
   def save() = {
     //this.mainNode.saveDomains(storage)

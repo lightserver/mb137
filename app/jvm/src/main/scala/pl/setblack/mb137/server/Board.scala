@@ -40,11 +40,13 @@ object Board {
             println(s"confirmed server node ${serverId}")
             server.registerActorConnection( subscriber, serverId)
           case msg: ReceivedMessage    ⇒ {
-            println("received from "+msg.sender)
-            println(s"----message-----\b${msg.message}\n-----------------------")
+
+            println(s"received from ${msg.sender} " )
             val nodeMessage = read[NodeMessageTransport](msg.message).toNodeMessage
+            println(s"message route ${nodeMessage.route} and destination ${nodeMessage.destination}")
             val routed = nodeMessage.copy( route = nodeMessage.route :+  nodeMessage.event.sender)
-            println("converted"+routed)
+            //println("converted"+routed)
+
             server.receiveMessage(routed)
 
             //dispatch(msg.toMessage)

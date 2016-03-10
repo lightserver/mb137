@@ -19,6 +19,6 @@ class BoardMutable(val subject:String) {
 
 
   def getDisplayedMessages( ):Seq[BoardMessage] = {
-    this.messages.filter( m => !deleted.contains( m.uuid)).toSeq
+    this.messages.filter( m => !deleted.contains( m.uuid)).sortBy(m => m.timestamp).toSeq
   }
 }

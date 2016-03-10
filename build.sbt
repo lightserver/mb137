@@ -20,7 +20,7 @@ val app = crossProject.settings(
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "scalatags" % "0.5.1",
     "com.lihaoyi" %%% "upickle" % "0.3.7",
-    "pl.setblack.lsa" %%% "cataracta" % "0.95"
+    "pl.setblack.lsa" %%% "cataracta" % "0.96"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 
@@ -40,8 +40,6 @@ val app = crossProject.settings(
      persistLauncher in Compile := true
   ).jvmSettings(
     libraryDependencies ++= Seq(
-      "io.spray" %% "spray-can" % "1.3.2",
-      "io.spray" %% "spray-routing" % "1.3.2",
       "com.typesafe.akka" %% "akka-actor" % "2.3.6",
       "com.typesafe.akka" %% "akka-remote" % "2.3.6",
       "org.scalaz" %% "scalaz-core" % "7.1.2",

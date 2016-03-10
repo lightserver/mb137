@@ -25,8 +25,6 @@
     <orderEntry type="library" name="SBT: com.lihaoyi:scalarx_sjs0.6_2.11:0.2.8:jar" level="project" />
     <orderEntry type="library" name="SBT: com.lihaoyi:scalatags_sjs0.6_2.11:0.5.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.webjars:react:0.13.1:jar" level="project" />
-    <orderEntry type="module" module-name="app-sources" exported="" />
     <orderEntry type="library" name="SBT: com.github.japgolly.scalajs-react:core_sjs0.6_2.11:0.10.4:jar" level="project" />
     <orderEntry type="library" name="SBT: com.github.japgolly.scalajs-react:extra_sjs0.6_2.11:0.10.4:jar" level="project" />
     <orderEntry type="library" name="SBT: com.lihaoyi:derive_sjs0.6_2.11:0.3.7:jar" level="project" />
@@ -35,6 +33,7 @@
     <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.webjars.bower:react:0.14.3:jar" level="project" />
-    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_sjs0.6_2.11:0.95:jar" level="project" />
+    <orderEntry type="library" name="SBT: pl.setblack.lsa:cataracta_sjs0.6_2.11:0.96:jar" level="project" />
+    <orderEntry type="module" module-name="app-sources" exported="" />
   </component>
 </module>

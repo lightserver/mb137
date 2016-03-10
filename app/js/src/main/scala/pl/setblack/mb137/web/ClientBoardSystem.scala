@@ -1,5 +1,6 @@
 package pl.setblack.mb137.web
 
+import pl.setblack.lsa.concurrency.NoConcurrencySystem
 import pl.setblack.lsa.io.{ClientWSProtocol, Storage, WebStorage}
 import org.scalajs.dom.raw.{MessageEvent, WebSocket}
 import pl.setblack.lsa.events.{ConnectionData, DomainListener, NodeMessageTransport, Node}
@@ -15,14 +16,14 @@ class ClientBoardSystem(
                          serverId : Long
                          ) extends BoardSystem {
 
-  val connectionData = mutable.Map[Long, ConnectionData]()
+  val connectionData = mutable.HashMap[Long, ConnectionData]()
 
   override def createStorage(): Storage = {
     new WebStorage()
   }
 
   override def createMainNode ():Node = {
-    val node = new Node(nodeId)(storage)
+    val node = new Node(nodeId)(storage, new NoConcurrencySystem)
 
     node.registerConnection( serverId, new ClientWSProtocol(connection, node))
     connection.onmessage = { (event : MessageEvent) =>

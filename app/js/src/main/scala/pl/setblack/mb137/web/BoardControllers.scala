@@ -19,10 +19,11 @@ class BoardBackend(backendInitializer: BackendInitializer,
                    connection: ServerConnection,
                    $: BackendScope[Unit, BoardState]) extends DomainListener[BoardMutable, BoardEvent] {
   backendInitializer.backend = Some(this)
-
+  var lastDomainState : Option[BoardMutable] = None
 
   override def onDomainChanged(domainObj: BoardMutable, ev: Option[BoardEvent]): Unit = {
     println("domain has changed")
+    lastDomainState = Some(domainObj)
     $.modState(_.copy(messages = domainObj.getDisplayedMessages())).runNow()
   }
 
@@ -40,7 +41,7 @@ class BoardBackend(backendInitializer: BackendInitializer,
 
     $.modState(s => {
       connection.system.enterMessage(s.inputText, s.author)
-      s.copy(messages = connection.system.getBoardMutable().getDisplayedMessages())
+      s
     })
   }
 
@@ -52,13 +53,13 @@ class BoardBackend(backendInitializer: BackendInitializer,
       connection.system.load()
       //s.copy( messages = s.messages :+ newMessage)
       println("loaded")
-      s.copy(messages = connection.system.getBoardMutable().getDisplayedMessages())
+      s.copy(messages = Seq())
     })
   }
 
   def init(): Unit = {
     $.modState(s => {
-      s.copy(messages = connection.system.getBoardMutable().getDisplayedMessages())
+      s.copy(messages = Seq())
     }).runNow()
   }
 
