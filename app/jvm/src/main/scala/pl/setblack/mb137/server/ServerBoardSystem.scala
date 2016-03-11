@@ -1,7 +1,7 @@
 package pl.setblack.mb137.server
 
 import akka.actor.{ActorSystem, ActorRef}
-import pl.setblack.lsa.concurrency.NoConcurrencySystem
+import pl.setblack.lsa.concurrency.{AkkaConcurrencySystem, NoConcurrencySystem}
 import pl.setblack.lsa.events.{ConnectionData, NodeConnection, NodeMessage, Node}
 import pl.setblack.lsa.io.FileStore
 import pl.setblack.mb137.data.BoardSystem
@@ -27,7 +27,7 @@ class ServerBoardSystem(nodeId: Long) (implicit  system: ActorSystem) extends Bo
   override def createMainNode ():Node = {
     println(s"creating node with id:${nodeId}")
 
-    val node = new Node(Promise[Long].success(nodeId).future)(storage, new NoConcurrencySystem)
+    val node = new Node(Promise[Long].success(nodeId).future)(storage, new AkkaConcurrencySystem(system))
 
     node
   }

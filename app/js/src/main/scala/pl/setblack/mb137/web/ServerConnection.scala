@@ -23,9 +23,10 @@ class ServerConnection(val backend : BackendInitializer)  {
         println("registered once as: " + id)
 
         system = new ClientBoardSystem(id, connection, serverId)
+        backend.init()
         system.mainNode.registerDomainListener(backend, Seq("default"))
 
-        backend.init()
+
       }
       case x =>
         system.mainNode.processSysMessage(ev, connectionData)
