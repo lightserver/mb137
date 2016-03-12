@@ -14,7 +14,7 @@ class BoardMutable(val subject:String) {
 
   def delete ( uuid : String) = {
     this.deleted += uuid
-    println(s" in deleted : ${uuid}")
+
   }
 
 

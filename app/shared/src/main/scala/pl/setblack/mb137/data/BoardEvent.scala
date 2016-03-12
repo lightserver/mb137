@@ -24,7 +24,7 @@ object BoardEvent extends EventConverter[BoardEvent]{
          read[BoardEvent](str)
       } catch {
          case inv : Invalid => {
-            println(s"unrecognized ${str}")
+
             throw new RuntimeException(inv)
          }
       }

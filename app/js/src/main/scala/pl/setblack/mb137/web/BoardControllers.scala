@@ -22,7 +22,7 @@ class BoardBackend(backendInitializer: BackendInitializer,
   var lastDomainState : Option[BoardMutable] = None
 
   override def onDomainChanged(domainObj: BoardMutable, ev: Option[BoardEvent]): Unit = {
-    println("domain has changed")
+
     lastDomainState = Some(domainObj)
     $.modState(_.copy(messages = domainObj.getDisplayedMessages())).runNow()
   }
@@ -52,7 +52,7 @@ class BoardBackend(backendInitializer: BackendInitializer,
       //val newMessage = BoardMessage("ireeg", s.inputText)
       connection.system.load()
       //s.copy( messages = s.messages :+ newMessage)
-      println("loaded")
+
       s.copy(messages = Seq())
     })
   }
@@ -73,7 +73,7 @@ class BoardBackend(backendInitializer: BackendInitializer,
 class MessageBackend(connection: ServerConnection, $: BackendScope[BoardMessage, Unit]) {
   def delete(uuid: String) =
     (x:Any) => Callback {
-      println(s"deleting ${uuid}")
+
       connection.system.deleteMessage(uuid)
     }
 }

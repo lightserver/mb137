@@ -8,7 +8,7 @@ import upickle.default._
 class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutable](new BoardMutable("default"), path){
   type EVENT = BoardEvent
   override def processDomain(state: BoardMutable, boardEv: BoardEvent,  ctx: EventContext) = {
-      println("event is " + boardEv.toString)
+
       boardEv match {
         case NewPost(msg, author, timestamp, uuid) =>
           state.append( BoardMessage(author, msg, timestamp,uuid))

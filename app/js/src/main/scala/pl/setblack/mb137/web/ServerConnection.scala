@@ -20,7 +20,7 @@ class ServerConnection(val backend : BackendInitializer)  {
     val ctrlEvent = ControlEvent.parseControlEvent(ev.content)
     ctrlEvent match {
       case RegisteredClient(id,serverId) => {
-        println("registered once as: " + id)
+
 
         system = new ClientBoardSystem(id, connection, serverId)
         backend.init()

@@ -44,7 +44,7 @@ abstract class BoardSystem {
   }
 
   def resync() = {
-    println("resync...")
+
     this.mainNode.resync()
   }
 }
