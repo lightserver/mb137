@@ -18,8 +18,7 @@ val app = crossProject.settings(
     baseDirectory.value  / "shared" / "main" / "scala",
 
   libraryDependencies ++= Seq(
-    "com.lihaoyi" %%% "scalatags" % "0.5.1",
-    "com.lihaoyi" %%% "upickle" % "0.3.7",
+    "com.lihaoyi" %%% "upickle" % "0.3.8",
     "pl.setblack.lsa" %%% "cataracta" % "0.96"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
@@ -27,12 +26,10 @@ val app = crossProject.settings(
 
 ).jsSettings(
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "0.8.0",
       "com.github.japgolly.scalajs-react" %%% "core" % "0.10.4",
-      "com.github.japgolly.scalajs-react" %%% "extra" % "0.10.4",
-      "com.lihaoyi" %%% "scalarx" % "0.2.8"
+      "com.github.japgolly.scalajs-react" %%% "extra" % "0.10.4"
     ),
-    // React itself (react-with-addons.js can be react.js, react.min.js, react-with-addons.min.js)
+
   jsDependencies ++= Seq(
     "org.webjars.bower" % "react" % "0.14.3" / "react-with-addons.js" commonJSName "React",
     "org.webjars.bower" % "react" % "0.14.3" / "react-dom.js" commonJSName "ReactDOM"),
@@ -58,34 +55,10 @@ lazy val appJVM = app.jvm.settings(
 
   version := "0.31",
 
-  // JS files like app-fastopt.js and app-jsdeps.js need to be copied to the server
- /* (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
-     outDir
-  }) .data,
-  (resources in Compile) += (fastOptJS in (appJS, Compile)).value.map({ outDir: File =>
-    println("mapuje : " + outDir.toString)
-    val mapping =  new File( outDir.getAbsolutePath + ".map")
-    mapping
-  }) .data,*/
-  /*(resources in Compile) += (packageJSDependencies in (appJS, Compile)).value,
-  (resources in Compile) += (packageScalaJSLauncher in (appJS, Compile)).value.data,*/
+   resourceDirectory in Compile <<= baseDirectory(_ / "../shared/src/main/resources"),
 
-  // copy resources like quiz.css to the server
-  resourceDirectory in Compile <<= baseDirectory(_ / "../shared/src/main/resources"),
-
-  // allow the server to access shared source
- // that was a problem: unmanagedSourceDirectories in Compile <+= baseDirectory(_ / "../shared/src/main/scala"),
-
-  // application.conf too must be in the classpath
-  // application.conf too must be in the classpath
   unmanagedResourceDirectories in Compile <+= baseDirectory(_ / "../jvm/src/main/resources"),
-  /*(unmanagedResourceDirectories in Compile) += baseDirectory(_ / "../../web/.tmp" ).value.map(
-  { outDir: File =>
-    println("mapujex : " + outDir.toString)
-    val mapping =  new File( outDir.getAbsolutePath + ".map")
-    mapping
-  }
-  ),*/
+
   resourceGenerators in Compile <+= Def.task {
     val log = streams.value.log
     //log.info(s"APP: ${((classDirectory in Compile).value / "material-ui-app.html").getCanonicalPath}")
@@ -96,8 +69,6 @@ lazy val appJVM = app.jvm.settings(
     IO.copy(mappings, true)
     mappings.map(_._2)
   }
-
-
 
 
 ).enablePlugins(JavaAppPackaging)

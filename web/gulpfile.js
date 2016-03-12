@@ -17,6 +17,8 @@ var merge = require('merge-stream');
 var ripple = require('ripple-emulator');
 var proxyMiddleware = require('http-proxy-middleware');
 var less = require('gulp-less');
+var sourcemaps = require('gulp-sourcemaps');
+var appName="app";
 
 
 
@@ -24,15 +26,15 @@ var less = require('gulp-less');
  * Parse arguments
  */
 var args = require('yargs')
-    .alias('e', 'emulate')
-    .alias('b', 'build')
-    .alias('r', 'run')
-    // remove all debug messages (console.logs, alerts etc) from release build
-    .alias('release', 'strip-debug')
-    .default('build', false)
-    .default('port', 9000)
-    .default('strip-debug', false)
-    .argv;
+  .alias('e', 'emulate')
+  .alias('b', 'build')
+  .alias('r', 'run')
+  // remove all debug messages (console.logs, alerts etc) from release build
+  .alias('release', 'strip-debug')
+  .default('build', false)
+  .default('port', 9000)
+  .default('strip-debug', false)
+  .argv;
 
 var build = !!(args.build || args.emulate || args.run);
 var emulate = args.emulate;
@@ -40,6 +42,7 @@ var run = args.run;
 var port = args.port;
 var stripDebug = !!args.stripDebug;
 var targetDir = path.resolve(build ? 'www' : '.tmp');
+var fullJS = args.full;
 
 
 // global error handler
@@ -83,11 +86,15 @@ gulp.task('clean', function(done) {
 });
 
 
+
+
 gulp.task('less', function () {
   return gulp.src('app/less/**/*.less')
+    .pipe(sourcemaps.init())
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./.tmp/styles'));
 });
 
@@ -155,6 +162,13 @@ gulp.task('images', function() {
     .on('error', errorHandler);
 });
 
+gulp.task('ckeditor', function() {
+  return gulp.src('app/ckeditor/**/*.*')
+    .pipe(gulp.dest(path.join(targetDir, 'ckeditor')))
+
+    .on('error', errorHandler);
+});
+
 
 
 // concatenate and minify vendor sources
@@ -203,6 +217,10 @@ gulp.task('index', [ 'scripts'], function() {
     // inject vendor.js
     .pipe(_inject(gulp.src('vendor*.js', { cwd: targetDir }), 'vendor'))
     // inject app.js (build) or all js files indivually (dev)
+    // inject scala.js
+    .pipe(_inject(gulp.src([fullJS ? 'scjs/'+appName+'-jsdeps.min.js' :
+    'scjs/'+appName+'-jsdeps.js' , fullJS ? 'scjs/'+appName+'-opt.js'
+      : 'scjs/'+appName+'-fastopt.js','scjs/'+appName+'-launcher.js'], { cwd: targetDir }), 'scalajs'))
     .pipe(plugins.if(build,
       _inject(gulp.src('scripts/app*.js', { cwd: targetDir }), 'app'),
       _inject(_getAllScriptSources(), 'app')
@@ -241,12 +259,13 @@ gulp.task('ripple', ['scripts', 'less', 'watchers'], function() {
 
 // start watchers
 gulp.task('watchers', function() {
- plugins.livereload.listen();
+  plugins.livereload.listen();
 //  gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/less/**/*.less', ['less']);
   gulp.watch('app/fonts/**', ['fonts']);
   gulp.watch('app/icons/**', ['iconfont']);
   gulp.watch('app/images/**', ['images']);
+  gulp.watch('app/ckeditor/**', ['ckeditor']);
   gulp.watch('app/scripts/**/*.js', ['index']);
   gulp.watch('./vendor.json', ['vendor']);
   gulp.watch('app/templates/**/*.html', ['index']);
@@ -269,8 +288,10 @@ gulp.task('default', function(done) {
       'templates',
       'less',
       'images',
+      'ckeditor',
       'vendor',
-      'scalajs'
+      'scalajs',
+      'index'
     ],
     'index',
     build ? 'noop' : 'watchers',
@@ -279,3 +300,21 @@ gulp.task('default', function(done) {
     run ? 'ionic:run' : 'noop',
     done);
 });
+
+
+gulp.task('build', function() {
+  runSequence(
+    'clean',
+    [
+      'fonts',
+      'templates',
+      'less',
+      'images',
+      'ckeditor',
+      'vendor',
+      'scalajs'
+    ],
+    'index');
+});
+
+

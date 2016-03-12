@@ -13,6 +13,7 @@ lib_managed/
 *.class
 *.log
 
+
 # sbt specific
 .cache
 .history
@@ -26,6 +27,8 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
+.idea/
+.iml
 ### Scala template
 *.class
 *.log
