@@ -4,12 +4,17 @@ import java.util.Date
 
 import pl.setblack.lsa.events.Node
 import pl.setblack.lsa.io.Storage
+import pl.setblack.lsa.security.SecurityProvider
 import upickle._
+
+import scala.concurrent.{ExecutionContext, Future}
 
 
 abstract class BoardSystem {
   val  storage = createStorage()
   val mainNode = createMainNode()
+
+  import ExecutionContext.Implicits.global
 
   val boardRef = mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
 
@@ -30,7 +35,7 @@ abstract class BoardSystem {
   def deleteMessage( uuid: String) = {
    val deletePost = DeletePost( uuid)
 
-    boardRef.send(deletePost)
+  boardRef.send(deletePost)
   }
 
 
@@ -46,6 +51,12 @@ abstract class BoardSystem {
   def resync() = {
 
     this.mainNode.resync()
+  }
+
+  protected def createSecurityProvider:Future[SecurityProvider] = {
+    Future {
+      new SecurityProvider()
+    }
   }
 }
 

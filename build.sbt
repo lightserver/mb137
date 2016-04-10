@@ -12,14 +12,14 @@ scalaJSStage in Global := FastOptStage
 skip in packageJSDependencies := false
 
 val app = crossProject.settings(
-  scalaVersion := "2.11.7",
+  scalaVersion := "2.11.8",
 
   unmanagedSourceDirectories in Compile +=
     baseDirectory.value  / "shared" / "main" / "scala",
 
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "upickle" % "0.3.8",
-    "pl.setblack.lsa" %%% "cataracta" % "0.96"
+    "pl.setblack.lsa" %%% "cataracta" % "0.97"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 

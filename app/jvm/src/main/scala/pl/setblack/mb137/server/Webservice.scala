@@ -34,7 +34,7 @@ class Webservice(implicit fm: Materializer, system: ActorSystem) extends Directi
         pathPrefix("scjs")(getFromResourceDirectory("")) ~
         pathPrefix( "services" ) {
           path("board") {
-            parameter('name) { name ⇒
+            parameter('id) { name ⇒
               handleWebsocketMessages(websocketMessagesFlow(sender = name))
             }
         } ~ {

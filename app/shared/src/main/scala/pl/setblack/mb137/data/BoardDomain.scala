@@ -9,6 +9,7 @@ class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutabl
   type EVENT = BoardEvent
   override def processDomain(state: BoardMutable, boardEv: BoardEvent,  ctx: EventContext) = {
 
+
       boardEv match {
         case NewPost(msg, author, timestamp, uuid) =>
           state.append( BoardMessage(author, msg, timestamp,uuid))
