@@ -10,25 +10,19 @@ import upickle._
 import scala.concurrent.{ExecutionContext, Future}
 
 
-abstract class BoardSystem {
-  val  storage = createStorage()
-  val mainNode = createMainNode()
-
-  import ExecutionContext.Implicits.global
+class BoardSystem(val mainNode : Node) {
 
   val boardRef = mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
 
-  load()
-  resync()
+  mainNode.loadDomains()
 
-   def createMainNode():Node
-
-   def createStorage() : Storage
+  mainNode.resync()
 
 
   def enterMessage( txt: String, author:String) = {
     val uuid = java.util.UUID.randomUUID.toString
     val newPost = NewPost(txt, author, new Date().getTime(), uuid)
+    println(s" sending to boardref ${boardRef}")
     boardRef.send(newPost)
   }
 
@@ -40,24 +34,9 @@ abstract class BoardSystem {
 
 
 
-  def save() = {
-    //this.mainNode.saveDomains(storage)
-  }
 
-  def load() = {
-    this.mainNode.loadDomains()
-  }
 
-  def resync() = {
 
-    this.mainNode.resync()
-  }
-
-  protected def createSecurityProvider:Future[SecurityProvider] = {
-    Future {
-      new SecurityProvider()
-    }
-  }
 }
 
 

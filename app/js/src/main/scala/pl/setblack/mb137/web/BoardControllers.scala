@@ -16,31 +16,35 @@ import scala.scalajs.js.annotation.JSExport
 
 
 class BoardBackend(backendInitializer: BackendInitializer,
-                   connection: ServerConnection,
+                   bs: BoardSystem,
                    $: BackendScope[Unit, BoardState]) extends DomainListener[BoardMutable, BoardEvent] {
   backendInitializer.backend = Some(this)
   var lastDomainState : Option[BoardMutable] = None
 
-  override def onDomainChanged(domainObj: BoardMutable, ev: Option[BoardEvent]): Unit = {
+   bs.mainNode.registerDomainListener(this, Seq("default"))
 
+  override def onDomainChanged(domainObj: BoardMutable, ev: Option[BoardEvent]): Unit = {
+    println("DOMAN CHANGED")
     lastDomainState = Some(domainObj)
     $.modState(_.copy(messages = domainObj.getDisplayedMessages())).runNow()
   }
 
-  def onChangeInputText(e: ReactEventI) = {
+  def onChangeInputText(e: ReactKeyboardEventI)  : Callback= {
+    e.persist()
     $.modState(_.copy(inputText = e.target.value))
   }
 
-  def onChangeAuthor(e: ReactEventI) = {
+  def onChangeAuthor(e: ReactEventI) : Callback= {
+    e.persist()
     $.modState(_.copy(author = e.target.value))
   }
 
 
   def handleSubmit(e: ReactEventI) = {
     e.preventDefault()
-
+    println("sending....")
     $.modState(s => {
-      connection.system.enterMessage(s.inputText, s.author)
+      bs.enterMessage(s.inputText, s.author)
       s
     })
   }
@@ -48,13 +52,6 @@ class BoardBackend(backendInitializer: BackendInitializer,
   def handleLoad(e: ReactEventI) = {
     e.preventDefault()
 
-    $.modState(s => {
-      //val newMessage = BoardMessage("ireeg", s.inputText)
-      connection.system.load()
-      //s.copy( messages = s.messages :+ newMessage)
-
-      s.copy(messages = Seq())
-    })
   }
 
   def init(): Unit = {
@@ -70,11 +67,11 @@ class BoardBackend(backendInitializer: BackendInitializer,
   }
 }
 
-class MessageBackend(connection: ServerConnection, $: BackendScope[BoardMessage, Unit]) {
+class MessageBackend(bs: BoardSystem, $: BackendScope[BoardMessage, Unit]) {
   def delete(uuid: String) =
     (x:Any) => Callback {
 
-      connection.system.deleteMessage(uuid)
+      bs.deleteMessage(uuid)
     }
 }
 
@@ -93,13 +90,12 @@ class BackendInitializer extends DomainListener[BoardMutable, BoardEvent] {
 object BoardControllers {
 
 
-  def initBoard() = {
+  def initBoard(sys: BoardSystem) = {
     val backendInitializer = new BackendInitializer
-    val connection = new ServerConnection(backendInitializer)
 
     val PostedMessage = ReactComponentB[BoardMessage]("PostedMessage")
       .stateless
-      .backend(new MessageBackend(connection, _))
+      .backend(new MessageBackend(sys, _))
       .render(duringCallback =>
         <.li(
           <.span(^.className := "author")(duringCallback.props.author),
@@ -119,7 +115,7 @@ object BoardControllers {
 
     val BoardApp = ReactComponentB[Unit]("TodoApp")
       .initialState(BoardState(toDisp, "", "", "anonymous"))
-      .backend(new BoardBackend(backendInitializer, connection, _))
+      .backend(new BoardBackend(backendInitializer, sys, _))
       .render(duringCallback => {
         val S = duringCallback.state
         val B = duringCallback.backend
@@ -134,7 +130,9 @@ object BoardControllers {
           )
         )
       }).buildU
-    React.render(BoardApp(), document.getElementById("react"))
+
+    ReactDOM.render(BoardApp(), document.getElementById("react"))
+
   }
 
 

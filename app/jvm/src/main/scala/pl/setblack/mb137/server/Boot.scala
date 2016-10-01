@@ -3,31 +3,18 @@ package pl.setblack.mb137.server
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
-import scala.util.{ Success, Failure }
+import pl.setblack.lsa.server.JVMNexus
+import pl.setblack.mb137.data.BoardSystem
+
+import scala.util.{Failure, Success}
 
 object Boot extends App {
   implicit val system = ActorSystem()
-  import system.dispatcher
+
   implicit val materializer = ActorMaterializer()
 
-  val config = system.settings.config
-  val interface = config.getString("app.interface")
-  val port = config.getInt("app.port")
-  val nodeId = config.getLong("app.node.id")
+   val mainNode = new JVMNexus().start
 
-  val service = new Webservice()
+   val sys = new BoardSystem(mainNode)
 
-
-
-  println( getClass.getClassLoader.toString)
-
-  val binding = Http().bindAndHandle(service.route, interface, port)
-  binding.onComplete {
-    case Success(binding) ⇒
-      val localAddress = binding.localAddress
-      println(s"Server is listening on ${localAddress.getHostName}:${localAddress.getPort}")
-    case Failure(e) ⇒
-      println(s"Binding failed with ${e.getMessage}")
-      system.shutdown()
   }
-}

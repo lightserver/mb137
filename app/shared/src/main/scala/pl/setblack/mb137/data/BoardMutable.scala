@@ -9,6 +9,7 @@ class BoardMutable(val subject:String) {
   val deleted  : mutable.Set[String] = mutable.Set()
 
   def append( msg : BoardMessage ) = {
+    println("have new message....")
     this.messages += msg
   }
 

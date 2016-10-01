@@ -11,6 +11,7 @@ case class BoardState(val messages: Seq[BoardMessage],
 
 
   def addMessage(msg : BoardMessage ): BoardState = {
+    println(s"have new message ${msg.txt}" )
     copy( messages =  messages :+ msg)
   }
  }

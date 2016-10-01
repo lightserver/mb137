@@ -19,20 +19,37 @@ val app = crossProject.settings(
 
   libraryDependencies ++= Seq(
     "com.lihaoyi" %%% "upickle" % "0.3.8",
-    "pl.setblack.lsa" %%% "cataracta" % "0.97"
+    "pl.setblack.lsa" %%% "cataracta" % "0.98"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 
 
 ).jsSettings(
     libraryDependencies ++= Seq(
-      "com.github.japgolly.scalajs-react" %%% "core" % "0.10.4",
-      "com.github.japgolly.scalajs-react" %%% "extra" % "0.10.4"
+      "org.scala-js" %%% "scalajs-dom" % "0.9.0",
+      "com.github.japgolly.scalajs-react" %%% "core" % "0.11.1",
+      "com.github.japgolly.scalajs-react" %%% "extra" % "0.11.1"
+
     ),
 
   jsDependencies ++= Seq(
-    "org.webjars.bower" % "react" % "0.14.3" / "react-with-addons.js" commonJSName "React",
-    "org.webjars.bower" % "react" % "0.14.3" / "react-dom.js" commonJSName "ReactDOM"),
+    "org.webjars.bower" % "react" % "15.2.1"
+      /        "react-with-addons.js"
+      minified "react-with-addons.min.js"
+      commonJSName "React",
+
+    "org.webjars.bower" % "react" % "15.2.1"
+      /         "react-dom.js"
+      minified  "react-dom.min.js"
+      dependsOn "react-with-addons.js"
+      commonJSName "ReactDOM",
+
+    "org.webjars.bower" % "react" % "15.2.1"
+      /         "react-dom-server.js"
+      minified  "react-dom-server.min.js"
+      dependsOn "react-dom.js"
+      commonJSName "ReactDOMServer",
+    "org.webjars" % "cryptojs" % "3.1.2" / "rollups/sha1.js"),
     skip in packageJSDependencies := false ,// creates app-jsdeps.js with the react JS lib inside
      persistLauncher in Compile := true
   ).jvmSettings(
