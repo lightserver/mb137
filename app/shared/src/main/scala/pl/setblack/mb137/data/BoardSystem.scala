@@ -14,10 +14,7 @@ class BoardSystem(val mainNode : Node) {
 
   val boardRef = mainNode.registerDomain(Seq("default"), new BoardDomain("default", Seq("default")))
 
-  mainNode.loadDomains()
-
-  mainNode.resync()
-
+  boardRef.restoreDomain()
 
   def enterMessage( txt: String, author:String) = {
     val uuid = java.util.UUID.randomUUID.toString
