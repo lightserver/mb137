@@ -5,8 +5,10 @@ import pl.setblack.lsa.io.Storage
 
 import upickle.default._
 
-class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutable](new BoardMutable("default"), path){
-  type EVENT = BoardEvent
+class BoardDomain( topic :String, path: Seq[String])
+    extends  Domain[BoardMutable, BoardEvent](
+      new BoardMutable("default"), path)(BoardEvent){
+
   override def processDomain(state: BoardMutable, boardEv: BoardEvent,  ctx: EventContext) = {
 
       println("event in board domain....")
@@ -19,5 +21,5 @@ class BoardDomain( topic :String, path: Seq[String]) extends  Domain[BoardMutabl
     DefaultResponse
   }
 
-  override def getEventConverter: EventConverter[EVENT] = BoardEvent
+
 }
